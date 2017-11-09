@@ -1,0 +1,1604 @@
+msgid "Home"
+msgstr "घर"
+
+msgid "Enter search terms..."
+msgstr "सर्च आइटम दर्ज करो..."
+
+msgid "VIDEO UPLOADER SIGN IN"
+msgstr "वीडियो अपलोड करने में हस्ताक्षर"
+
+
+msgid "EDITOR SIGN IN"
+msgstr "संपादक पर हस्ताक्षर"
+
+msgid "Sign In"
+msgstr "साइन इन करें"
+
+
+
+
+
+
+msgid "Enter Email"
+msgstr "ईमेल दर्ज करें"
+
+msgid "Enter Password"
+msgstr "पास वर्ड दर्ज करें"
+
+msgid "Remember Me"
+msgstr "मुझे याद रखना"
+
+msgid "Forgot Password?"
+msgstr "पासवर्ड भूल गए?"
+
+msgid "Forgot Password"
+msgstr "पासवर्ड भूल गए"
+
+msgid "Go Back"
+msgstr "वापस जाओ"
+
+msgid "Submit"
+msgstr "जमा करें"
+
+msgid "SIGNIN"
+msgstr "साइन इन करें"
+
+msgid "Not Registered?"
+msgstr "पंजीकृत नहीं?"
+
+msgid "Sign Up here"
+msgstr "यहां साइन अप करें"
+
+msgid "Sign Up"
+msgstr "साइन अप करें"
+
+msgid "SIGN UP"
+msgstr "साइन अप करें"
+
+
+msgid "Name"
+msgstr "नाम"
+
+msgid "Email"
+msgstr "ईमेल"
+
+msgid "Re-enter Password"
+msgstr "पासवर्ड फिर से दर्ज करें"
+
+
+msgid "Preferred Language"
+msgstr "पसंदीदा भाषा"
+
+msgid "English"
+msgstr "अंग्रेज़ी"
+
+msgid "Hindi"
+msgstr "हिंदी"
+
+msgid "Gender"
+msgstr "लिंग"
+
+msgid "Male"
+msgstr "नर"
+
+msgid "Female"
+msgstr "महिला"
+
+msgid "Already Registered?"
+msgstr "पहले से पंजीकृत?"
+
+msgid "SIGN IN HERE"
+msgstr "यहां साइन इन करो"
+
+msgid "BECOME A VIDEO UPLOADER"
+msgstr "एक वीडियो अपलोड बने"
+
+msgid "BECOME EDITOR"
+msgstr "संपादक बने"
+
+
+msgid "OR"
+msgstr "या"
+
+msgid "BECOME AN EDITOR"
+msgstr "एक संपादक बने"
+
+msgid "PROFILE IMAGE"
+msgstr "प्रोफ़ाइल छवि"
+
+msgid "Search"
+msgstr "खोज"
+
+msgid "Teams"
+msgstr "टीमें"
+
+msgid "Welcome"
+msgstr "स्वागत हे"
+
+msgid "Quick Links"
+msgstr "त्वरित लिंक"
+
+msgid "Sport Category"
+msgstr "खेल श्रेणी"
+
+msgid "SIGN IN"
+msgstr "साइन इन करें"
+
+msgid "Enter User Name or Email"
+msgstr "सदस्य नाम या ईमेल दर्ज करें"
+
+msgid "more..."
+msgstr "पूरा देखें..."
+
+
+msgid "View Details"
+msgstr "विवरण देखें"
+
+msgid "Video Uploader Login"
+msgstr "वीडियो अपलोड करने लॉग इन"
+
+msgid "Editor Login"
+msgstr "संपादक लॉग इन"
+
+msgid "Fan Login"
+msgstr "फैन लॉग इन"
+
+msgid "Fan Registration"
+msgstr "फैन पंजीकरण"
+
+msgid "Fan Registration"
+msgstr "फैन पंजीकरण"
+
+msgid "Language"
+msgstr "भाषा"
+
+msgid "Upcoming games are not ready for prediction."
+msgstr "आगामी खेल भविष्यवाणी के लिए तैयार नहीं हैं।"
+
+
+msgid "First Team"
+msgstr "पेहली टीम"
+
+msgid "Second Team"
+msgstr "दूसरी टीम"
+
+msgid "Start Time"
+msgstr "प्रारंभ समय"
+
+msgid "End Time"
+msgstr "अंत समय"
+
+msgid "Time Remaining For Prediction"
+msgstr "अंत समय"
+
+msgid "Download Schedule"
+msgstr "शेड्यूल डाउनलोड  करें"
+
+
+
+
+
+
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+msgid "Contact Us"
+msgstr "हमसे संपर्क करें"
+
+msgid "Help"
+msgstr "मदद"
+
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+msgid "Terms and Conditions"
+msgstr "नियम और शर्तें"
+
+
+
+
+msgid "Cricket"
+msgstr "क्रिकेट"
+
+msgid "Soccer"
+msgstr "फ़ुटबॉल"
+
+msgid "Football"
+msgstr "रग्बी"
+
+msgid "Hockey"
+msgstr "हॉकी"
+
+msgid "Baseball"
+msgstr "बेसबॉल"
+
+msgid "Basketball"
+msgstr "बास्केटबाल"
+
+msgid "The user could not be saved. Please, try again"
+msgstr "उपयोगकर्ता को बचाया नहीं जा सका। कृपया पुन: प्रयास करें"
+
+msgid "Welcome"
+msgstr "स्वागत हे"
+
+msgid "Copyright &copy; 2016. All Right Reserved."
+msgstr "कॉपीराइट © 2016. सभी अधिकार सुरक्षित।"
+
+msgid "There is no comment on this news"
+msgstr "इस खबर पर कोई टिप्पणी नहीं की है"
+
+
+
+----------------static pages--------------------------
+
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+msgid "About Us"
+msgstr "हमारे बारे में "
+
+msgid "Contact Us"
+msgstr "हमसे संपर्क करेंं"
+
+msgid "Help"
+msgstr "मदद"
+
+msgid "Terms and Consitions"
+msgstr "नियम और शर्तें"
+
+=============Validations Start================
+msgid "Please enter your email."
+msgstr "अपने ईमेल दर्ज करें"
+
+msgid "Please enter password."
+msgstr "पासवर्ड दर्ज करें।"
+
+msgid "Please enter valid email."
+msgstr "मान्य ईमेल दर्ज करें।"
+
+msgid "Please enter valid email."
+msgstr "मान्य ईमेल दर्ज करें।"
+
+msgid "Minimum 6 characters required."
+msgstr "यूनतम 6 अक्षर की आवश्यकता है।"
+
+msgid "Gif, jpg, jpeg, png images are allowed."
+msgstr "GIF, JPG, जेपीईजी, PNG छवियों की अनुमति है।"
+
+msgid "Please enter your name."
+msgstr "अपना नाम दर्ज करें।"
+
+msgid "25 characters max limit."
+msgstr "अधिकतम 25 वर्ण सीमा।"
+
+msgid "Email is already in use."
+msgstr "ईमेल पहले से प्रयोग में है।"
+
+msgid "Please re-enter password."
+msgstr "फिर से दर्ज करें पासवर्ड।"
+
+msgid "Password do not match."
+msgstr "पासवर्ड मेल नहीं खाते।"
+
+msgid "Please select language."
+msgstr "कृपया भाषा का चयन करें।"
+
+msgid "Please select gender."
+msgstr "कृपया लिंग चुनें।"
+
+msgid "Please enter current password."
+msgstr "वर्तमान पासवर्ड दर्ज करें।"
+
+
+msgid "Please enter new password."
+msgstr "नया पासवर्ड दर्ज करें।"
+
+msgid "Please re-enter new password."
+msgstr "कृपया नया पासवर्ड फिर से दर्ज करें।"
+
+msgid "Please re-enter new password."
+msgstr "कृपया नया पासवर्ड फिर से दर्ज करें।"
+
+msgid "Please select sport."
+msgstr "कृपया खेल का चयन करें।"
+
+msgid "Please select tournament."
+msgstr "कृपया टूर्नामेंट का चयन करें।"
+
+msgid "Please select league."
+msgstr "कृपया लीग का चयन करें।"
+
+msgid "Please select team."
+msgstr "कृपया टीम का चयन करें।"
+
+msgid "Please input link."
+msgstr "इनपुट लिंक कृपया।"
+
+msgid "Please input link."
+msgstr "इनपुट वीडियो शीर्षक कृपया।"
+
+msgid "Please select status."
+msgstr "कृपया स्थिति का चयन करें।"
+
+msgid "Please add description."
+msgstr "विवरण जोड़ें।"
+
+msgid "Please select file."
+msgstr "कृपया फ़ाइल का चयन करें।"
+
+msgid "Please add news content."
+msgstr "खबर सामग्री जोड़ें।"
+
+msgid "Invalid Image"
+msgstr "अमान्य छवि"
+
+msgid "My Profile"
+msgstr "मेरा प्रोफ़ाइल"
+
+msgid "Save"
+msgstr "सहेजें"
+
+msgid "Change Password"
+msgstr "पासवर्ड बदलें"
+
+msgid "Change"
+msgstr "परिवर्तन"
+
+msgid "Tournament"
+msgstr "टूर्नामेंट"
+
+msgid "Sport"
+msgstr "खेल"
+
+msgid "League"
+msgstr "संघ"
+
+msgid "Actions"
+msgstr "प्रक्रिया"
+
+msgid "My Teams"
+msgstr "मेरी टीमें"
+
+msgid "Leave Team"
+msgstr "टीम छोडों"
+
+msgid "Are you sure you want to leave this team ? Once you leave, you will not be able to join any other team of same league."
+msgstr "आप इस टीम छोड़ना चाहते हैं आप सुनिश्चित हैं? एक बार जब आप छोड़ देते हैं, तो आप एक ही लीग के किसी भी अन्य टीम में शामिल होने में सक्षम नहीं होगा।"
+
+ 
+
+=============Validations End================
+
+=============Controller messages============
+
+msgid "Invalid user."
+msgstr "अमान्य उपयोगकर्ता।"
+
+msgid "The user has been deleted."
+msgstr "उपयोगकर्ता हटा दिया गया है।"
+
+msgid "The user could not be deleted. Please, try again."
+msgstr "उपयोगकर्ता हटाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Invalid Email or Password."
+msgstr "अमान्य ईमेल या पासवर्ड।"
+
+msgid "Welcome"
+msgstr "स्वागत हे"
+
+msgid "Cricket News"
+msgstr "क्रिकेट खबर"
+
+msgid "Basketball News"
+msgstr "बास्केटबॉल खबर"
+
+msgid "Football News"
+msgstr "रग्बी खबर"
+
+msgid "Soccer News"
+msgstr "फुटबॉल खबर"
+
+msgid "Baseball News"
+msgstr "बेसबॉल खबर"
+
+msgid "Hockey News"
+msgstr "हॉकी खबर"
+
+msgid "News"
+msgstr "खबर"
+
+msgid "Troll"
+msgstr "ट्रोल"
+
+msgid "Tag"
+msgstr "टैग"
+
+msgid "Attach files"
+msgstr "फ़ाइलों को संलग्न"
+
+msgid "Please enter valid Email address."
+msgstr "कृपया मान्य ईमेल पता दर्ज करें।"
+
+
+
+===========HTML Pages=================
+
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+
+msgid "Profile Settings"
+msgstr "पार्श्वचित्र समायोजन"
+
+msgid "My Dashboard"
+msgstr "मेरा डैशबोर्ड"
+
+msgid "More Info"
+msgstr "और जानकारी"
+
+msgid "Team"
+msgstr "टीम"
+
+msgid "My Wall"
+msgstr "मेरी वाल"
+
+msgid "Wall"
+msgstr "वाल"
+
+msgid "Game Prediction"
+msgstr "खेल भविष्यवाणी"
+
+msgid "Forum & Poll"
+msgstr "फोरम और पोल"
+
+msgid "Write Post"
+msgstr "टिप्पणी लिखें"
+
+msgid "jpeg, jpg, gif, png format supported."
+msgstr "जेपीजी, जेपीईजी, GIF, PNG प्रारूप का समर्थन किया।"
+
+msgid "Write post here."
+msgstr "पोस्ट यहाँ लिखें।"
+
+msgid "Post"
+msgstr "पोस्ट"
+
+msgid "Post Date:"
+msgstr "पोस्ट दिनांक:"
+
+msgid "Chat room"
+msgstr "चैट रूम"
+
+msgid "Comments"
+msgstr "टिप्पणियाँ"
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "No more posts to show."
+msgstr "कोई और अधिक पदों को दिखाने के लिए।"
+
+msgid "show comment"
+msgstr "टिप्पणी शो"
+
+
+msgid "LANG"
+msgstr "भाषा"
+
+
+msgid "User"
+msgstr "सदस्य"
+
+msgid "My Team Members"
+msgstr "मेरी टीम के सदस्य"
+
+msgid "View"
+msgstr "देखें"
+
+msgid "Team User"
+msgstr "टीम सदस्य"
+
+msgid "Joined Team :"
+msgstr "टीम से जुड़े :"
+
+msgid "Team Member Details"
+msgstr "टीम सदस्य विवरण"
+
+msgid "Restrict to view post"
+msgstr "पोस्ट देखने के लिए प्रतिबंधित करें"
+
+msgid "Restrict to comment on post"
+msgstr "पोस्ट पर टिप्पणी करने के लिए प्रतिबंधित करें "
+
+msgid "Restrict to tag on posts"
+msgstr "पदों पर टैग करने के लिए प्रतिबंधित करें "
+
+msgid "User Since"
+msgstr "सदस्य कब से है "
+
+msgid "Enter current password"
+msgstr "वर्तमान पासवर्ड डालें"
+
+msgid "Enter new password"
+msgstr "नया पासवर्ड डालें"
+
+msgid "Confirm your password"
+msgstr "अपने पासवर्ड की पुष्टि करें"
+
+msgid "Edit Image"
+msgstr "संपादित छविं"
+
+msgid "Cancel"
+msgstr "रद्द करें"
+
+msgid "Team"
+msgstr "टीमं"
+
+msgid "View Polls"
+msgstr "जनमत देखें"
+
+msgid "You have 0 notification."
+msgstr "कोई  अधिसूचना नही हैं"
+
+
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+
+msgid "Log Out"
+msgstr "लोग आउट"
+
+msgid "User Login"
+msgstr "सदस्य लॉगिन"
+
+msgid "Hello"
+msgstr "नमस्ते"
+
+msgid "Please activate your account using the verification link sent to your email address."
+msgstr "अपने ई-मेल पते पर भेजा सत्यापन लिंक का उपयोग कर अपने खाते को सक्रिय करें।"
+
+msgid "Your email has been verified. Please login."
+msgstr "आपका ईमेल सत्यापित किया गया है। कृपया लॉगिन करें।"
+
+msgid "You are already registerd with our website.Please use your credentials to login."
+msgstr "आप पहले से ही हमारे वेबसाइट.कृपया प्रवेश करने के लिए अपने क्रेडेंशियल्स का उपयोग के साथ पंजीकृत हैं।"
+
+msgid "Password"
+msgstr "पासवर्ड"
+
+msgid "Top Trending News"
+msgstr "प्रमुख खबर"
+
+msgid "View News"
+msgstr "खबर देखे"
+
+msgid "users visited this topic."
+msgstr "लोगों ने इस विषय को देखा ।"
+
+
+msgid "Select Your Team"
+msgstr "टीम का चयन करे"
+
+msgid "Assign VideoUploader Team"
+msgstr "निरुपित वीडियो अपलोडर टीम"
+
+msgid "Please Select Sport"
+msgstr "कृपया स्पोर्ट का चयन करें"
+
+msgid "Please Select Sport"
+msgstr "कृपया स्पोर्ट का चयन करें"
+
+msgid "Please Select Tournament"
+msgstr "कृपया टूर्नामेंट का चयन करें"
+
+msgid "Please Select League"
+msgstr "कृपया लीग का चयन करें"
+
+msgid "Please Select Team"
+msgstr "कृपया टीम का चयन"
+
+msgid "Please Select Tournament"
+msgstr "कृपया टूर्नामेंट का चयन करें"
+
+msgid "Please Select League"
+msgstr "कृपया लीग का चयन करें"
+
+msgid "Title"
+msgstr "शीर्षक"
+
+msgid "Status"
+msgstr "स्थिति"
+
+
+msgid "No record available."
+msgstr "कोई रिकार्ड उपलब्ध नहीं हैं।"
+
+msgid "YouTube Video"
+msgstr "यूट्यूब वीडियो"
+
+msgid "YouTube Video Share"
+msgstr "यूट्यूब वीडियो शेयर करें"
+
+
+msgid "YouTube Link"
+msgstr "यूट्यूब लिंक"
+
+msgid "Video Title"
+msgstr "वीडियो शीषर्क"
+
+msgid "Video Status"
+msgstr "वीडियो स्थिति"
+
+msgid "Preview"
+msgstr "पूर्वावलोकन"
+
+
+msgid "Video url can not be empty."
+msgstr "वीडियो यूआरएल खाली नहीं हो सकता।"
+
+msgid "Please input video title."
+msgstr "कृपया वीडियो का शीर्षक डाले।"
+
+
+msgid "Invalid youtube url."
+msgstr "अमान्य यूट्यूब यूआरएल।"
+
+msgid "Active"
+msgstr "सक्रिय"
+
+
+msgid "Edit Video"
+msgstr "वीडियो संपादित करें"
+
+
+msgid "Enter youtube link"
+msgstr "यूट्यूब लिंक दर्ज करें"
+
+
+msgid "Title for video"
+msgstr "वीडियो का शीर्षक"
+
+msgid "-- Select Status --"
+msgstr "-- स्थिति का चयन करें --"
+
+
+msgid "Delete Video"
+msgstr "वीडियो हटाओ"
+
+
+msgid "Title"
+msgstr "शीर्षक"
+
+msgid "Actions"
+msgstr "प्रक्रिया"
+
+
+msgid "View Video"
+msgstr "देखें वीडियो"
+
+msgid "Edit YouTube Video"
+msgstr "यूट्यूब वीडियो संपादित करें"
+
+msgid "YouTube video share"
+msgstr "यूट्यूब वीडियो शेयर करें"
+
+msgid "The video has been saved."
+msgstr "वीडियो सेव हो चुका है।"
+
+msgid "Some errors occurred ! Please try again"
+msgstr "कुछ त्रुटियां हुईं! कृपया पुन: प्रयास करें"
+
+msgid "List News"
+msgstr "सूची खबर"
+
+msgid "Approved By Admin"
+msgstr "व्यवस्थापक द्वारा स्वीकृत"
+
+msgid "Description"
+msgstr "विवरण"
+
+msgid "No result found."
+msgstr "कोई परिणाम नहीं मिला।"
+
+msgid "Search"
+msgstr "खोज"
+
+msgid "Reset"
+msgstr "रीसेट"
+
+msgid "Add"
+msgstr "जोड़ो"
+
+msgid "-- Select Sport --"
+msgstr "-- खेल का चयन करें --"
+
+
+
+------
+msgid "Click below to join new team."
+msgstr "नई टीम में शामिल होने के लिए नीचे क्लिक करें।"
+
+msgid "Join New Team"
+msgstr "नई टीम में शामिल हो"
+
+msgid "Registration Step 2"
+msgstr "पंजीकरण चरण 2"
+
+msgid "You have successfully left the team."
+msgstr "आप ने टीम को सफलतापूर्वक छोड़ दिया है।"
+
+msgid "Rejoin Team"
+msgstr "फिर से जुडे"
+
+msgid "Your have rejoined team successfully."
+msgstr "आप टीम में सफलतापूर्वक शामिल हो गए हैं।"
+
+msgid "Add News"
+msgstr "खबर जोड़ें"
+
+msgid "News Image"
+msgstr "खबर छवि"
+
+msgid "Status"
+msgstr "स्थिति"
+
+msgid "-- Select status --"
+msgstr "स्थिति का चयन"
+
+msgid "Please enter description."
+msgstr "विवरण दर्ज करें।"
+
+msgid "The news has been saved."
+msgstr "खबर को बचाया जा चुका है।"
+
+msgid "Pending for admin approval"
+msgstr "व्यवस्थापक अनुमोदन के लिए लंबित"
+
+msgid "Approved by admin"
+msgstr "व्यवस्थापक द्वारा स्वीकृत"
+
+msgid "No more data to show."
+msgstr "दिखाने के लिए और डाटा नहीं है।"
+
+msgid "Post Date:"
+msgstr "पोस्ट तारीख:"
+
+msgid "Notification"
+msgstr "अधिसूचना"
+
+msgid "Your poll has been saved."
+msgstr "आपका मतदान जमा हो चुका है।"
+
+msgid "You have already submitted poll."
+msgstr "आपका मतदान पहने से जमा है।"
+
+msgid "Cricket Prediction"
+msgstr "क्रिकेट भविष्यवाणी"
+
+msgid "Baseball Prediction"
+msgstr "बेसबॉल भविष्यवाणी"
+
+msgid "Basketball Prediction"
+msgstr "बास्केटबाल भविष्यवाणी"
+
+msgid "Football Prediction"
+msgstr "रग्बी भविष्यवाणी"
+
+msgid "Soccer Prediction"
+msgstr "फुटबॉल भविष्यवाणी"
+
+msgid "Hockey Prediction"
+msgstr "हॉकी भविष्यवाणी"
+
+msgid "Cricket Scheduling"
+msgstr "क्रिकेट निर्धारण"
+
+msgid "Basketball Scheduling"
+msgstr "बास्केटबाल निर्धारण"
+
+msgid "Baseball Scheduling"
+msgstr "बेसबॉल निर्धारण"
+
+msgid "Football Scheduling"
+msgstr "रग्बी निर्धारण"
+
+msgid "Soccer Scheduling"
+msgstr "फुटबॉल निर्धारण"
+
+msgid "Hockey Scheduling"
+msgstr "हॉकी निर्धारण"
+
+msgid "Action"
+msgstr "प्रक्रिया"
+
+msgid "Show Prediction"
+msgstr "भविष्यवाणी दिखाये"
+
+msgid "Predict here"
+msgstr "भविष्यवाणी करे"
+
+msgid "Set Your Prediction"
+msgstr "भविष्यवाणी करे "
+
+msgid "Prediction has been saved"
+msgstr "भविष्यवाणी जमा हो चुकी है "
+
+msgid "Type"
+msgstr "प्रकार"
+
+msgid "Location"
+msgstr "स्थान"
+
+msgid "Gift Category"
+msgstr "उपहार श्रेणी"
+
+msgid "For"
+msgstr "के लिये"
+
+msgid "Amount"
+msgstr "रकम"
+
+msgid "FROM:"
+msgstr "किस से:"
+
+msgid "TO:"
+msgstr "किस मे:"
+
+msgid "GET RATES"
+msgstr "दरें प्राप्त करे"
+
+msgid "LOAD MORE GIFTS"
+msgstr "अधिक उपहार देखे"
+
+msgid "First Team Goals"
+msgstr "प्रथम टीम का स्कोर"
+
+msgid "Second Team Goals"
+msgstr "दूसरी टीम का स्कोर"
+
+msgid "Save Prediction"
+msgstr "भविष्यवाणी जमा करे"
+
+msgid "--Select One--"
+msgstr "--एक चुनो--"
+
+msgid "Please Enter Score."
+msgstr "कृपया स्कोर दर्ज करें।"
+
+msgid "First Team Score"
+msgstr "प्रथम टीम का स्कोर"
+
+msgid "Second Team Score"
+msgstr "दूसरी टीम का स्कोर"
+
+msgid "Integers only."
+msgstr "केवल पूर्णांक।"
+
+msgid "Prediction time over"
+msgstr "भविष्यवाणी समय खत्म"
+
+msgid "Gifts"
+msgstr "उपहार"
+
+msgid "Cash Order"
+msgstr "नकदी आदेश"
+
+msgid "Chat room opend successfully."
+msgstr "चैट रूम सफलतापूर्वक खोला।"
+
+
+msgid "There is no comment on this news"
+msgstr "इस खबर पर कोई टिप्पणी नहीं की है"
+
+msgid "user visited this topic."
+msgstr "लोगों ने इस विषय को देखा ।"
+
+msgid "Unlike News"
+msgstr "खबर के विपरीत"
+
+msgid "Add Comment"
+msgstr "टिप्पणी जोड़ें"
+
+msgid "Post Comment"
+msgstr "टिप्पणी पोस्ट करें"
+
+msgid "Users"
+msgstr "सदस्य"
+
+msgid "Please enter name"
+msgstr "नाम दर्ज करें"
+
+msgid "Your password has been sent to your email. Please check your email"
+msgstr "आपका पासवर्ड आपके ईमेल के लिए भेजा गया है। कृपया अपनी ईमेल देखें"
+
+msgid "Your email does not exist. Please, try again."
+msgstr "आपका ईमेल मौजूद नहीं है। कृपया पुन: प्रयास करें।"
+
+msgid "View User"
+msgstr "सदस्य देखें "
+
+msgid "Select your team."
+msgstr "अपनी टीम का चयन करें ।"
+
+msgid "You have entered wrong password. Please, try again."
+msgstr "आपने गलत पासवर्ड दर्ज किया है। कृपया पुन: प्रयास करें।"
+
+msgid "New password does not match the Re-enter password. Please, try again."
+msgstr "नया पासवर्ड पुन: दर्ज पासवर्ड मेल नहीं खाता। कृपया पुन: प्रयास करें।"
+
+msgid "Password has been changed successfully."
+msgstr "पासवर्ड सफलतापूर्वक बदल दिया गया है।"
+
+msgid "Please fill all the fields."
+msgstr "कृपया सभी क्षेत्रों को भरे।"
+
+msgid "SignUp"
+msgstr "साइन अप करें"
+
+msgid "Please select a valid image format."
+msgstr "कृपया एक वैध छवि प्रारूप का चयन करें।"
+
+msgid "The user has been saved."
+msgstr "सदस्य जमा हो चुका है।"
+
+msgid "Unable to upload Image and save record. Please, try again."
+msgstr "छवि अपलोड करें और रिकॉर्ड सहेजने में असमर्थ। कृपया पुन: प्रयास करें।"
+
+msgid "Please select a valid image format."
+msgstr "कृपया एक वैध छवि प्रारूप का चयन करें।"
+
+msgid "Fanswage Welcomes you. Your email not verified. Please, try again."
+msgstr "Fanswage स्वागत करता है। आपका ईमेल सत्यापित नहीं। कृपया पुन: प्रयास करें।"
+
+msgid "Unable to save user !!"
+msgstr "सदस्य को जमा करने में असमर्थ !!"
+
+msgid "Invalid credentials, Please try again"
+msgstr "अमान्य साख,फिर से कोशिश करें"
+
+msgid "The user has been activated successfully."
+msgstr "सदस्य सफलतापूर्वक सक्रिय कर दिया गया है।"
+
+msgid "The user has been deactivated successfully."
+msgstr "सदस्य सफलतापूर्वक निष्क्रिय कर दिया गया है।"
+
+msgid "-- Select Team --"
+msgstr "-- टीम का चयन --"
+
+msgid "you can not comment more then 180 character."
+msgstr "आप 180 से अधिक चरित्र टिप्पणी नहीं कर सकते हैं।"
+
+msgid "Please enter comment."
+msgstr "टिप्पणी दर्ज करें।"
+
+msgid "Add Walls"
+msgstr "दीवार जोड़ें।"
+
+msgid "The wall has been created."
+msgstr "दीवार बन गई है।"
+
+msgid "The wall could not generate. Please, try again."
+msgstr "दीवार उत्पन्न नहीं कर सकते। कृपया पुन: प्रयास करें।"
+
+
+msgid "Add comments"
+msgstr "टिप्पणी करें।"
+
+msgid "Invalid comment"
+msgstr "अमान्य टिप्पणी।"
+
+msgid "Invalid post"
+msgstr "अमान्य पोस्ट"
+
+msgid "Wall Notification"
+msgstr "दीवार अधिसूचना।"
+
+
+msgid "Invalid team"
+msgstr "अमान्य टीम"
+
+msgid "The post has been deleted by user."
+msgstr "पोस्ट उपयोगकर्ता द्वारा हटा दिया गया है।"
+
+msgid "Post value could not be empty. Please enter some text or upload image"
+msgstr "पोस्ट मान रिक्त नहीं हो सकता है। कुछ पाठ दर्ज करें या चित्र अपलोड करें"
+
+msgid "The user could not be saved. Please, try again."
+msgstr "उपयोगकर्ता को जमा नहीं किया जा सका। कृपया पुन: प्रयास करें।"
+
+
+msgid "Unable to upload Image and save record. Please, try again."
+msgstr "छवि अपलोड करें और रिकॉर्ड सहेजने में असमर्थ। कृपया पुन: प्रयास करें।"
+
+msgid "Please select a valid image format."
+msgstr "कृपया एक वैध छवि प्रारूप का चयन करें।"
+
+msgid "The post could not be saved. Please, try again."
+msgstr "पोस्ट को जमा नहीं किया जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Video status has been changed successfully."
+msgstr "वीडियो स्थिति को सफलतापूर्वक बदल दिया गया है।"
+
+
+msgid "The video status could not be changed. Please, try again."
+msgstr "वीडियो स्थिति को बदला नहीं जा सकता है। कृपया पुन: प्रयास करें।"
+
+msgid "Post value could not be empty. Please enter some text or upload image"
+msgstr "पोस्ट मान रिक्त नहीं हो सकता है। कुछ पाठ दर्ज करें या चित्र अपलोड करें"
+
+msgid "You have not assigned any wall. Please, try again."
+msgstr "आप को कोई भी दीवार नहीं सौंपी है। कृपया पुन: प्रयास करें।"
+
+msgid "The post has been saved successfully."
+msgstr "पोस्ट सफलतापूर्वक सहेजा गया है।"
+
+
+msgid "The post could not be saved. Please, try again."
+msgstr "पोस्ट को जमा नहीं किया जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Unable to upload Image and save record. Please, try again."
+msgstr "छवि अपलोड करें और रिकॉर्ड सहेजने में असमर्थ। कृपया पुन: प्रयास करें।"
+
+msgid "Please select a valid image format."
+msgstr "कृपया एक वैध छवि प्रारूप का चयन करें।"
+
+msgid "Post status has been changed successfully."
+msgstr "पोस्ट की स्थिति को सफलतापूर्वक बदल दिया गया है।"
+
+msgid "The post status could not be changed. Please, try again."
+msgstr "पोस्ट की स्थिति को बदला नहीं जा सकता है। कृपया पुन: प्रयास करें।"
+
+msgid "Post value could not be empty. Please enter some text or upload image"
+msgstr "पोस्ट मान रिक्त नहीं हो सकता है। कुछ पाठ दर्ज करें या चित्र अपलोड करें"
+
+msgid "The post could not be saved. Please, try again."
+msgstr "पोस्ट को जमा नहीं किया जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Not able to save record. Please, try again."
+msgstr "रिकार्ड बचाने में सक्षम नहीं। कृपया पुन: प्रयास करें।"
+
+
+msgid "Share Video"
+msgstr "वीडियो शेयर करें"
+
+msgid "The youtube link is not valid. Please, try again."
+msgstr "यूट्यूब लिंक मान्य नहीं है। कृपया पुन: प्रयास करें।"
+
+msgid "The video could not be saved. Please, try again."
+msgstr "वीडियो को सहेजा नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "The user can join 3 active teams at a time."
+msgstr "उपयोगकर्ता एक समय में 3 सक्रिय टीमों को शामिल कर सकते हैं।"
+
+msgid "The user cannot be assigned in the same league again."
+msgstr "उपयोगकर्ता एक ही लीग में फिर से नहीं सौंपा जा सकता है।"
+
+msgid "The user team could not be saved. Please, try again."
+msgstr "उपयोगकर्ता टीम को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Assign VideoUploader Team"
+msgstr "निरुपित वीडियो अपलोडर टीम"
+
+msgid "The user cannot be assigned in the same league again."
+msgstr "उपयोगकर्ता एक ही लीग में फिर से नहीं सौंपा जा सकता है।"
+
+msgid "The user team could not be saved. Please, try again."
+msgstr "उपयोगकर्ता टीम को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "List Blogger"
+msgstr "सूची ब्लॉगर"
+
+msgid "Update Blogger Team"
+msgstr "अद्यतन ब्लॉगर टीम"
+
+msgid "The user team has been saved."
+msgstr "उपयोगकर्ता टीम को बचाया जा चुका है।"
+
+msgid "View Blogger Team"
+msgstr "देखें ब्लॉगर टीम"
+
+msgid "Invalid user team"
+msgstr "अमान्य उपयोगकर्ता टीम"
+
+msgid "Internal error occurs. Please, try again."
+msgstr "आंतरिक त्रुटि हुई। कृपया पुन: प्रयास करें।"
+
+msgid "Team status has been changed successfully."
+msgstr "टीम का दर्जा सफलतापूर्वक बदल दिया गया है।"
+
+msgid "The user team status could not be changed. Please, try again."
+msgstr "उपयोगकर्ता टीम का दर्जा नहीं बदला जा सकता है। कृपया पुन: प्रयास करें।"
+
+msgid "Invalid news"
+msgstr "अमान्य खबर"
+
+msgid "Invalid page"
+msgstr "अमान्य पृष्ठ"
+
+msgid "Your message has been sent successfully."
+msgstr "आपका संदेश सफलतापूर्वक भेजा जा चुका है।"
+
+msgid "The message can not be sent. Please, try again."
+msgstr "संदेश नहीं भेजा जा सकता है। कृपया पुन: प्रयास करें।"
+
+msgid "Comment has been saved."
+msgstr "टिप्पणी को बचाया जा चुका है।"
+
+msgid "Comment could not be saved. Please, try again."
+msgstr "टिप्पणी को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Your request has been submitted, Team will look into it."
+msgstr "आपका अनुरोध प्रस्तुत किया गया है, टीम इस पर गौर करेंगे।"
+
+msgid "Something went wrong, Please try again"
+msgstr "कुछ गलत हो गया। कृपया पुन: प्रयास करें"
+
+msgid "Prediction has been saved."
+msgstr "भविष्यवाणी को बचाया जा चुका है।"
+
+msgid "Prediction could not be saved. Please, try again."
+msgstr "भविष्यवाणी को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Not able to save record. Please, try again."
+msgstr "रिकार्ड बचाने में सक्षम नहीं। कृपया पुन: प्रयास करें।"
+
+msgid "Invalid Image."
+msgstr "अमान्य छवि।"
+
+msgid "Please upload image greater than 348 (w) X 478 (h) dimension."
+msgstr "कृपया 348 (w) x 478 (h) आयाम से अधिक आकार का चित्र अपलोड करें।"
+
+msgid "The news could not be saved. Please, try again."
+msgstr "खबर को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Please select a valid image format. gif, jpg, png, jpeg are allowed only"
+msgstr "कृपया एक वैध छवि प्रारूप का चयन करें। GIF, JPG, PNG, जेपीईजी केवल अनुमति दी जाती है"
+
+msgid "Update News"
+msgstr "खबर अद्यतन करें"
+
+msgid "News has been saved."
+msgstr "खबर को बचाया जा चुका है।"
+
+msgid "News could not be saved. Please, try again."
+msgstr "खबर बचाई नहीं जा सकी। कृपया पुन: प्रयास करें।"
+
+msgid "News has been deleted."
+msgstr "खबर हटा दी गयी हे।"
+
+msgid "News could not be deleted. Please, try again."
+msgstr "खबर हटाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Profile has been updated successfully."
+msgstr "प्रोफाइल सफलता अद्यतन हो चुका है।"
+
+msgid "Profile could not be saved. Please, try again."
+msgstr "प्रोफाइल को बचाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "Profile can not be saved! Please try again."
+msgstr "प्रोफाइल को बचाया नहीं जा सकता है! कृपया पुन: प्रयास करें।"
+
+msgid "Profile saved successfully."
+msgstr "प्रोफाइल सफलता सेव हो चुका है।"
+
+msgid "Update Profile"
+msgstr "प्रोफ़ाइल अपडेट करें"
+
+msgid "Invalid video."
+msgstr "अमान्य वीडियो।"
+
+msgid "Invalid video id."
+msgstr "अमान्य वीडियो पहचान।"
+
+msgid "The video has been deleted."
+msgstr "इस वीडियो को हटाया जा चुका है।"
+
+msgid "The video could not be deleted. Please, try again."
+msgstr "वीडियो हटाया नहीं जा सका। कृपया पुन: प्रयास करें।"
+
+msgid "New password and Confirm password doesn't match.Please, try again."
+msgstr "नया पासवर्ड और पुष्टि पासवर्ड मेल नहीं खाता। कृपया पुन: प्रयास करें।"
+
+msgid "The password you entered is incorrect, please retype your current password"
+msgstr "आपके द्वारा दर्ज पासवर्ड गलत है, अपने वर्तमान पासवर्ड फिर से लिखें कृपया"
+
+msgid "The password cannot be changed. Please, try again."
+msgstr "पासवर्ड बदला नहीं जा सकता। कृपया पुन: प्रयास करें।"
+
+msgid "Unable to crete wall or chatroom. Please, try again."
+msgstr "दीवार या चैट रूम बनाने में असमर्थ। कृपया पुन: प्रयास करें।"
+
+msgid "Are you sure you want to delete this post."
+msgstr "क्या आप वाकई इस पोस्ट को हटाना चाहते हैं।"
+
+msgid "Unknown"
+msgstr "अनजान"
+
+msgid "Delete"
+msgstr "हटाएँ"
+
+msgid "View More"
+msgstr "और देखो"
+
+msgid "View Post"
+msgstr "पोस्ट देखें"
+
+msgid "Comment here..."
+msgstr "टिप्पणी यहाँ ..."
+
+msgid "Add comment"
+msgstr "टिप्पणी जोड़ें"
+
+msgid "You can not comment here. You are blocked by"
+msgstr "आप यहाँ टिप्पणी नहीं कर सकता। आप द्वारा अवरुद्ध कर रहे हैं"
+
+msgid "Update"
+msgstr "अद्यतन"
+
+msgid "Are you sure you want to delete this comment."
+msgstr "क्या आप इस कमेंट को मिटाने के बारे में पक्के हैं।"
+
+msgid "Error in comment deletion! Please try again."
+msgstr "टिप्पणी विलोपन में त्रुटि! कृपया पुन: प्रयास करें।"
+
+msgid "Comment has been updated."
+msgstr "टिप्पणी अद्यतन किया गया है।"
+
+msgid "Error in comment updation! Please try again."
+msgstr "टिप्पणी अद्यतन करने में त्रुटि! कृपया पुन: प्रयास करें।"
+
+msgid "Post Details"
+msgstr "पोस्ट विवरण"
+
+msgid "Post Content on Team Wall"
+msgstr "टीम की दीवार पर पोस्ट सामग्री"
+
+msgid "Team Wall"
+msgstr "टीम दीवार"
+
+msgid "Post Content"
+msgstr "पोस्ट सामग्री"
+
+msgid "Post Image"
+msgstr "पोस्ट छवि"
+
+msgid "Enter post content"
+msgstr "पोस्ट सामग्री दर्ज"
+
+msgid "Are you sure you want to unpublish this video."
+msgstr "क्या आप वाकई इस वीडियो अप्रकाशित करना चाहते हैं।"
+
+msgid "UnPublish Video"
+msgstr "अप्रकाशित वीडियो"
+
+msgid "Are you sure you want to publish this video."
+msgstr "क्या आप वाकई इस वीडियो को प्रकाशित करना चाहते हैं।"
+
+msgid "Chat Room"
+msgstr "गपशप करने का कमरा"
+
+msgid "Created"
+msgstr "बनाया"
+
+msgid "Modified"
+msgstr "संशोधित"
+
+msgid "YouTube Url"
+msgstr "यूट्यूब यूआरएल"
+
+msgid "YouTube Video"
+msgstr "यूट्यूब वीडियो"
+
+msgid "Are you sure you want to delete video ?"
+msgstr "आप वीडियो को हटाना चाहते हैं आप सुनिश्चित हैं?"
+
+msgid "Inactive"
+msgstr "निष्क्रिय"
+
+msgid "Active"
+msgstr "सक्रिय"
+
+msgid "Profile can not be saved!, Please try again."
+msgstr "प्रोफ़ाइल सहेजा नहीं जा सकता !, फिर कोशिश करें।"
+
+msgid "Event Title"
+msgstr "कार्यक्रम का शीर्षक"
+
+msgid "Most Recent"
+msgstr "सबसे हाल का"
+
+msgid "sample image"
+msgstr "नमूना छवि"
+
+msgid "Post:"
+msgstr "पद:"
+
+msgid "Sport Wall"
+msgstr "स्पोर्ट दीवार"
+
+msgid "Error in saving comment! Please try again."
+msgstr "टिप्पणी की बचत करने में त्रुटि! कृपया पुन: प्रयास करें।"
+
+msgid "Blogger Video"
+msgstr "ब्लॉगर वीडियो"
+
+msgid "Blogger post video"
+msgstr "ब्लॉगर पोस्ट वीडियो"
+
+msgid "Team Details"
+msgstr "टीम विवरण"
+
+msgid "Video Link"
+msgstr "वीडियो लिंक"
+
+msgid "Chat History"
+msgstr "चैट का इतिहास"
+
+msgid "Chat history not available."
+msgstr "चैट इतिहास उपलब्ध नहीं है।"
+
+msgid "Games"
+msgstr "खेल"
+
+msgid "Leagues"
+msgstr "लीग"
+
+msgid "Polls"
+msgstr "चुनाव"
+
+msgid "Tournaments"
+msgstr "प्रतियोगिता"
+
+msgid "Static Pages"
+msgstr "स्थैतिक पृष्ठ"
+
+msgid "Slider"
+msgstr "फिसल पट्टी"
+
+msgid "Predictions"
+msgstr "भविष्यवाणियों"
+
+msgid "Admin Profile"
+msgstr "व्यवस्थापक प्रोफ़ाइल"
+
+msgid "Click  below to join new team."
+msgstr "नीचे क्लिक करें नई टीम में शामिल होने के लिए।"
+
+msgid "Admin Add Role"
+msgstr "व्यवस्थापक भूमिका जोड़े"
+
+msgid "List Roles"
+msgstr "सूची भूमिकाओं"
+
+msgid "List Users"
+msgstr "सूची उपयोगकर्ता"
+
+msgid "New User"
+msgstr "नया उपयोगकर्ता"
+
+msgid "Admin Edit Role"
+msgstr "व्यवस्थापक भूमिका संपादित करें"
+
+msgid "Manage Section Listing"
+msgstr "धारा महत्वपूर्ण सूचना"
+
+msgid "Manage Permissions"
+msgstr "अनुमतियाँ प्रबंधित करें"
+
+msgid "Add Sport"
+msgstr "खेल जोड़ें।"
+
+msgid "Admin Add Sport"
+msgstr "व्यवस्थापक खेल जोड़े"
+
+msgid "Enter sports name"
+msgstr "खेल के नाम दर्ज करें"
+
+msgid "Enter tile image"
+msgstr "टाइल छवि दर्ज करें"
+
+msgid "Select Status"
+msgstr "चयन स्थिति"
+
+msgid "Add Page"
+msgstr "पृष्ठ जोड़ें"
+
+msgid "Admin Add Static Page"
+msgstr "व्यवस्थापक जोड़े स्टेटिक पृष्ठ"
+
+msgid "Add Sport Slider"
+msgstr "जोड़े स्पोर्ट स्लाइडर"
+
+msgid "Admin Add Sport Slider"
+msgstr "व्यवस्थापक जोड़े स्पोर्ट स्लाइडर"
+
+msgid "Edit Page"
+msgstr "संपादित पेज"
+
+msgid "Admin Edit Static Page"
+msgstr "व्यवस्थापक संपादित स्टेटिक पृष्ठ"
+
+msgid "Edit Sport Slider"
+msgstr "स्पोर्ट स्लाइडर संपादित करें"
+
+msgid "Admin Edit Slider"
+msgstr "व्यवस्थापक स्लाइडर संपादित करें"
+
+msgid "List Slider"
+msgstr "सूची स्लाइडर"
+
+msgid "View Page"
+msgstr "पृष्ठ देखें"
+
+msgid "Static Page Details"
+msgstr "स्टेटिक पृष्ठ विवरण"
+
+msgid "No Of Teams"
+msgstr "टीमों की संख्या"
+
+msgid "Start Date"
+msgstr "आरंभ करने की तिथि"
+
+msgid "End Date"
+msgstr "अंतिम तिथि"
+
+msgid "Host"
+msgstr "मेज़बान"
+
+msgid "Edit League"
+msgstr "लीग संपादित करें"
+
+msgid "Please Select"
+msgstr "कृपया चुने"
+
+msgid "--Select League Moderator--"
+msgstr "--लीग संचालक का चयन करें--"
+
+msgid "Admin Add League"
+msgstr "व्यवस्थापक लीग जोड़े"
+
+msgid "League Name"
+msgstr "लीग का नाम"
+
+msgid "List Leagues"
+msgstr "सूची लीग"
+
+msgid "Search by Name"
+msgstr "नाम से खोजें"
+
+msgid "Search by Host"
+msgstr "होस्ट के आधार पर खोजें"
+
+msgid "--Select Tournament--"
+msgstr "--टूर्नामेंट का चयन करें--"
+
+msgid "Edit User"
+msgstr "उपयोगकर्ता को संपादित करो"
+
+msgid "Delete User"
+msgstr "उपयोगकर्ता हटाएं"
+
+msgid "Are you sure you want to delete this league ?"
+msgstr "आप सुनिश्चित  हैं तथा इस लीग को हटाना चाहते हैं ?"
+
+msgid "View League Details"
+msgstr "लीग विवरण देखें"
+
+msgid "Edit News"
+msgstr "खबर संपादित करें"
+
+msgid "Delete News"
+msgstr "खबर मिटाएं"
+
+msgid "Enter your email to get new password."
+msgstr "नया पासवर्ड प्राप्त करने के लिए अपना ईमेल दर्ज करें।"
+
+msgid "Enter your registered email"
+msgstr "अपने पंजीकृत ईमेल दर्ज करें।"
+
+msgid "Your Message..."
+msgstr "आपका सन्देश..."
+
+msgid "Change"
+msgstr "परिवर्तन"
+
+msgid "Are you sure you want to delete this news ?"
+msgstr "आप इस खबर को हटाना चाहते हैं आप सुनिश्चित हैं?"
+
+msgid "Menu"
+msgstr "मेन्यू"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

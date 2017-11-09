@@ -1,0 +1,583 @@
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 992px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+    .player-bio-1 {
+        width: 100%;
+        float: left;
+    }
+    .team-detail-head {
+        width: 100%;
+    }
+    .team-tick-book {
+        width: 100%;
+        padding: 0px;
+    }
+    .team-detail-head ul li h5 {
+        font-size: 20px;
+    }
+    .uc h2 {} .hom-tick-1 {
+        /* width: 40%; */
+    }
+    .hom-tick-1 h3 {
+        font-size: 100px;
+    }
+    .hom-tick-2 {
+        /* width: 60%; */
+    }
+    .hom-tick-21 {
+        font-size: 36px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .hom-tick-22 {
+        font-size: 36px;
+        margin-top: 24px;
+    }
+    .hom-top-trends-box-11 {
+        margin-bottom: 30px;
+    }
+    .e_h1 {
+        display: none;
+    }
+    .foot2-2 {
+        margin-bottom: 30px;
+    }
+    .top-search {
+        padding: 25px 25px;
+    }
+    .i-head-left {
+        display: none;
+    }
+    .tr-pro {
+        width: 90%;
+    }
+    .training {
+        background: none;
+    }
+    .top-head img {
+        margin: 0 auto;
+        display: table;
+    }
+    .top-soc {
+        margin-bottom: 0px;
+        margin-top: 6px;
+        margin: 0 auto;
+        display: table;
+        float: inherit;
+    }
+    .mf-1 {
+        font-size: 18px;
+    }
+    .mf-31 {
+        font-size: 18px;
+    }
+    .mf-5 {
+        font-size: 18px;
+    }
+    .mob-hid {
+        display: none;
+    }
+    .foot-privacy {
+        display: none;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .kf form ul li {
+        padding: 5px;
+    }
+    .kf form ul li:nth-child(1) {
+        width: 100%;
+    }
+    .kf form ul li:nth-child(2) {
+        width: 50%;
+    }
+    .kf form ul li:nth-child(3) {
+        width: 50%;
+    }
+    .kf form ul li:nth-child(4) {
+        width: 100%;
+    }
+    .kf form ul li:nth-child(4) input {
+        width: 95%;
+    }
+    .event-left {
+        float: left;
+        width: 100%;
+    }
+    .event-right {
+        float: left;
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .el-img {
+        float: left;
+        width: 100%;
+    }
+    .el-con {
+        float: left;
+        width: 100%;
+        padding: 0px;
+        margin-top: 25px;
+    }
+    .a21 {
+        width: 100%;
+    }
+    .a22 {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .home-join p {
+        padding: 10px 0px;
+    }
+    .ve {
+        width: 80%;
+        padding: 35px 0px 60px 70px;
+    }
+    .blog-1 {
+        width: 100%;
+    }
+    .blog-2 {
+        width: 100%;
+    }
+    .blog-3 {
+        width: 100%;
+    }
+    .in-head {
+        width: 100%;
+    }
+    .in-head-1 {
+        width: 100%;
+    }
+    .in-head-1 a {
+        border-radius: 0px;
+        position: initial;
+        padding: 2px 10px;
+    }
+    .f1 {
+        width: 50%;
+    }
+    .team1 {
+        width: 100%;
+    }
+    .team1 {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 00px;
+    }
+    .player-info-2 ul li {
+        float: left;
+        width: 100%;
+    }
+    .bg-book {
+        width: 100%;
+    }
+    .mob-menu {
+        display: block;
+    }
+    .menu {
+        left: -92px;
+    }
+    /*--SCREEN WIDTH DECREASE--*/
+    
+    .h_l,
+    .h_r,
+    .kf,
+    .lp,
+    .ve {
+        padding: 60px 25px !important;
+    }
+    .hom-search {
+        padding: 15px 15px !important
+    }
+    .h_r {
+        padding: 0px !important;
+    }
+    .je h2 {
+        font-size: 30px;
+    }
+    .uc h2 {
+        font-size: 30px;
+    }
+    .uc a {
+        font-size: 16px;
+    }
+    .ela table tr td {
+        font-size: 14px;
+    }
+    .text {
+        font-size: 26px;
+    }
+    .mob-hide {
+        display: none;
+    }
+    .el-con h3 {
+        font-size: 22px;
+    }
+    .uc:before {
+        width: 100% !important;
+    }
+    .uc {
+        text-align: center;
+    }
+    .hom-tick-book {
+        width: 100%;
+    }
+    .hom-tick {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .events img {
+        width: 55px;
+    }
+    #myTable th,
+    #myTable td {
+        text-align: left;
+        padding: 5px 5px;
+    }
+    .pad-red-bot-0 {
+        margin-bottom: 0px !important;
+    }
+    .event-left ul li:last-child {
+        padding-bottom: 65px;
+    }
+    .event-right ul li h4 {
+        font-size: 32px;
+    }
+    .event-right ul li p {
+        font-size: 16px;
+    }
+    .event-right ul li a {
+        display: block;
+        text-align: center;
+    }
+    .hom-tick-1 h3 {
+        font-size: 72px !important;
+    }
+    .home-join ul {
+        margin-bottom: 0px;
+    }
+    .home-join ul li {
+        margin-bottom: 0px;
+    }
+    .ev-po-1 {
+        margin-bottom: 30px;
+    }
+    .events img {
+        display: none;
+    }
+    .events table tr th:first-child {
+        padding: 10px 20px !important;
+    }
+    .h-tm-ra {
+        padding-left: 0px;
+    }
+    .h-tm-ra1 {
+        padding-left: 0px;
+    }
+    .blog-3 ul li {
+        float: left;
+        margin-right: 10px;
+    }
+    .blog-1 {
+        display: none;
+    }
+    .blog-2 {
+        border-left: 0px solid #595959;
+        border-right: 0px solid #595959;
+    }
+    .blog-3 {
+        padding: 2% 3% 0% 3%;
+    }
+    .blog-2 ul li h4 {
+        margin-top: 0px;
+    }
+    .i-head {
+        padding: 0px 50px 0px 50px;
+    }
+    .tr-pro {
+        width: 100% !important;
+    }
+    .inn-ev-date-left h4 {
+        font-size: 40px;
+        margin-top: -8px;
+    }
+    .inn-ev-date-left span {
+        font-size: 12px;
+    }
+    .inn-ev-date-left {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .inn-ev-date-rig {
+        width: 100%;
+    }
+    .inn-ev-date-rig ul li {
+        text-align: left;
+        width: 24%;
+    }
+    .team-squad table tr th:nth-child(4) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(4) {
+        display: none;
+    }
+    .team-squad table tr th:nth-child(5) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(5) {
+        display: none;
+    }
+    .team-squad table tr th:nth-child(6) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(6) {
+        display: none;
+    }
+    .mf-1 {
+        font-size: 14px;
+        margin-top: 7px;
+        display: none;
+    }
+    .mf-31 {
+        font-size: 14px;
+    }
+    .mf-2 {
+        width: 20%;
+    }
+    .mf-4 {
+        width: 20%;
+    }
+    .mf-3 {
+        margin-top: 0px;
+        width: 60%;
+    }
+    .mf-5 {
+        font-size: 14px;
+        margin-top: 7px;
+        display: none;
+    }
+    .p-mf ul li div img {
+        width: 45px;
+    }
+    .hom-search-inn {
+        width: 90%;
+    }
+    .i-head-top {
+        display: none;
+    }
+    .ev-po-1 table tr th:nth-child(5) {
+        display: none;
+    }
+    .ev-po-1 table tr td:nth-child(5) {
+        display: none;
+    }
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 480px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    .ln ul li {
+        float: left;
+        width: 100%;
+    }
+    .f1 {
+        width: 100%;
+        padding: 0px;
+    }
+    .events table tr td a {
+        font-size: 14px;
+    }
+    #myTable th,
+    #myTable td {
+        padding: 10px 10px;
+    }
+    .el-con a {
+        font-size: 12px;
+    }
+    .events table tr th:first-child {
+        display: none;
+    }
+    .events table tr td:first-child {
+        display: none;
+    }
+    .top-soc li:nth-child(1) {
+        display: block;
+        width: 100%;
+    }
+    .top-soc li a i {
+        width: 50px;
+    }
+    .inn-reg-com {
+        display: block;
+        text-align: center;
+    }
+    .inn-reg-book {
+        margin-bottom: 15px;
+    }
+    .share-btn ul li {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .share-btn ul li a {
+        display: block;
+    }
+    .bg-book {
+        width: 100%;
+        padding: 30px 30px 15px 30px;
+    }
+    .i-head-right ul li a {
+        font-size: 10px;
+    }
+    #status {
+        left: 38%;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 481px and 768px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {} @media screen and (max-width: 481px) {}
+/*-------------------------------------------------------*/
+/* When the browser is between 482px and 767px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) and (min-width: 482px) {
+    .ln ul li {
+        float: left;
+        width: 50%;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 768px and 992px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .bg-book {
+        width: 80%;
+    }
+    .blog-1 h4 {
+        font-size: 50px;
+    }
+    .team-squad table tr th:nth-child(4) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(4) {
+        display: none;
+    }
+    .team-squad table tr th:nth-child(5) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(5) {
+        display: none;
+    }
+    .team-squad table tr th:nth-child(6) {
+        display: none;
+    }
+    .team-squad table tr td:nth-child(6) {
+        display: none;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 991px and 1200px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+    .bg-book {
+        width: 75%;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is 1400px or wider,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 1400px) {
+    .lp {
+        padding: 60px 50px 60px 145px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .inn-head-pad {
+        padding: 55px 50px 30px 145px;
+    }
+    .hom-search {
+        padding: 0px 50px 0px 145px;
+    }
+    .kf {
+        width: 100%;
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 1200px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .h_l {
+        float: left;
+        width: 100%;
+        padding: 75px 50px 0px 145px;
+    }
+    .h_r {
+        float: left;
+        width: 100%;
+        padding: 50px 50px 50px 145px;
+    }
+    .foot1 ul {
+        margin: 0px auto;
+        float: none;
+        display: table;
+    }
+    .foot1 a img {
+        display: table;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    .foot1 ul li {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+/* On smaller screens, decrease text size */
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 300px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media only screen and (max-width: 300px) {
+    .slprev,
+    .slnext,
+    .text {
+        font-size: 11px
+    }
+}
+/*-------------------------------------------------------*/
+/* When the browser is between 0px and 1320px wide,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 1320px) {
+    .eve-res {
+        width: 100%;
+    }
+    .ev-po-1 {
+        margin-bottom: 30px;
+    }
+}

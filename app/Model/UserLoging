@@ -1,0 +1,154 @@
+<?php
+App::uses('AppModel', 'Model');
+App::uses('AuthComponent', 'Controller/Component');
+/**
+ * User Model
+ *
+ * @property Role $Role
+ * @property Locale $Locale
+ * @property File $File
+ * @property League $League
+ * @property PollResponse $PollResponse
+ * @property Sport $Sport
+ * @property Team $Team
+ * @property WallContent $WallContent
+ */
+class UserLoging extends AppModel {
+    /**
+     * Display field
+     *
+     * @var string
+     */
+    public $useTable = 'user_logings';
+    public $displayField = 'user_id';
+
+        /**
+         * Virtual field
+         *
+         * @var string
+         */
+        public $virtualFields = [
+               
+                'status_name' => 'CASE WHEN users_loging.status = "0" THEN "Inactive" WHEN users_loging.status = "1" THEN "Active" END',
+                'delete_status' => 'CASE WHEN users_loging.is_deleted = "0" THEN "Exists" ELSE "Deleted" END',
+               
+        ];
+
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+   
+    // The Associations below have been created with all possible keys, those that are not needed can be removed
+
+    /**
+     * belongsTo associations
+     *
+     * @var array
+     */
+    public $belongsTo = [
+        /*'user' => [
+            'className' => 'users',
+            'foreignKey' => 'id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        ],*/
+       
+    ];
+
+    /**
+     * hasMany associations
+     *
+     * @var array
+     */
+    public $hasMany = [
+        'League' => [
+            'className' => 'League',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+        'PollResponse' => [
+            'className' => 'PollResponse',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+        'Sport' => [
+            'className' => 'Sport',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+        'Team' => [
+            'className' => 'Team',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+        'WallContent' => [
+            'className' => 'WallContent',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+                'UserTeam' => [
+            'className' => 'UserTeam',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ],
+//            'NewsComment' => array(
+//			'className' => 'NewsComment',
+//			'foreignKey' => 'user_id',
+//			'conditions' => '',
+//			'fields' => '',
+//			'order' => ''
+//		),
+    ];
+
+}
