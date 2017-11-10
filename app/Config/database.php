@@ -80,19 +80,16 @@ class DATABASE_CONFIG {
         //'encoding' => 'utf8',
     ];
 
-    public $dev = [
+    public $stage = [
         'datasource' => 'Database/Mysql',
         'persistent' => false,
-        'host' => 'localhost',
-        'login' => 'root',
-        'password' => 'root',
-        'host' => 'fanswage.clhaymuztwzr.us-west-2.rds.amazonaws.com',
-        'login' => 'fanswage_prod',
-        'password' => '9Un=m$hpthSeH95z',
-        'database' => 'fanswage_prod',
+        'host' => 'fanswagedev.clhaymuztwzr.us-west-2.rds.amazonaws.com',
+        'login' => 'fanswage_dev',
+        'password' => '5SM6BgACmX2n&!QN',
+        'database' => 'fanswage_dev',
         'prefix' => '',
+        //'encoding' => 'utf8',
     ];
-
 
     public $local = [
         'datasource' => 'Database/Mysql',
@@ -106,11 +103,11 @@ class DATABASE_CONFIG {
     ];
 
     public function __construct() {
-        if (isset($_SERVER) && isset($_SERVER['SERVER_NAME'])) {
+      if (isset($_SERVER) && isset($_SERVER['SERVER_NAME'])) {
           if ($_SERVER['SERVER_NAME'] == 'fanswage.com') {
               $this->default  = $this->prod;
           }else if($_SERVER['SERVER_NAME'] == 'dev.fanswage.com') {
-              $this->default  = $this->dev;
+              $this->default  = $this->stage;
           }else{
               $this->default  = $this->local;
           }
