@@ -69,7 +69,32 @@
  * A key/value array of driver specific connection options.
  */
 class DATABASE_CONFIG {
-    public $default = [
+    public $prod = [
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'fanswage.clhaymuztwzr.us-west-2.rds.amazonaws.com',
+        'login' => 'fanswage_prod',
+        'password' => '9Un=m$hpthSeH95z',
+        'database' => 'fanswage_prod',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    ];
+
+    public $dev = [
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'root',
+        'password' => 'root',
+        'host' => 'fanswage.clhaymuztwzr.us-west-2.rds.amazonaws.com',
+        'login' => 'fanswage_prod',
+        'password' => '9Un=m$hpthSeH95z',
+        'database' => 'fanswage_prod',
+        'prefix' => '',
+    ];
+
+
+    public $local = [
         'datasource' => 'Database/Mysql',
         'persistent' => false,
         'host' => 'localhost',
@@ -80,14 +105,17 @@ class DATABASE_CONFIG {
         //'encoding' => 'utf8',
     ];
 
-    public $test = [
-        'datasource' => 'Database/Mysql',
-        'persistent' => false,
-        'host' => 'localhost',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'test_database_name',
-        'prefix' => '',
-        //'encoding' => 'utf8',
-    ];
+    public function __construct() {
+        if (isset($_SERVER) && isset($_SERVER['SERVER_NAME'])) {
+          if ($_SERVER['SERVER_NAME'] == 'fanswage.com') {
+              $this->default  = $this->prod;
+          }else if($_SERVER['SERVER_NAME'] == 'dev.fanswage.com') {
+              $this->default  = $this->dev;
+          }else{
+              $this->default  = $this->local;
+          }
+      }else{
+          $this->default  = $this->local;
+      }
+    }
 }
