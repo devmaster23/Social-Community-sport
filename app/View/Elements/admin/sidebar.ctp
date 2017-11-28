@@ -45,7 +45,6 @@
 		  <ul class="treeview-menu" >
 		    <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-gift')) . "<span>".('List Gifts')."</span>",array('controller' => 'gifts', 'action' => 'index'),array('escape' => false)); ?></li>
 		    <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-plus')) . "<span>".('Add Gifts')."</span>",array('controller' => 'gifts', 'action' => 'add'),array('escape' => false)); ?></li>
-        <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-plus')) . "<span>".('Add Gift Location')."</span>",array('controller' => 'gifts', 'action' => 'addLocation'),array('escape' => false)); ?></li>
 
 		  </ul>
 
@@ -79,7 +78,7 @@
 		    <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-trophy')) . "<span>".('Soccer Predictions')."</span>",array('controller' => 'games', 'action' => 'soccerPrediction'),array('escape' => false)); ?></li>
 		     <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-trophy')) . "<span>".('Soccer Predictions')."</span>",array('controller' => 'games', 'action' => 'soccerWinner'),array('escape' => false)); ?></li>
 
-		     
+
 		  </ul>
 
 	    </li>
@@ -87,7 +86,7 @@
          <ul class="treeview-menu" >
          <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-users')) . "<span>".('List Scores')."</span>",array('controller' => 'games', 'action' => 'admin_listPredictions'),array('escape' => false)); ?></li>
          <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-plus')) . "<span>".('Add Soccers')."</span>",array('controller' => 'games', 'action' => 'admin_gamesResult'),array('escape' => false)); ?></li>
-         
+
          </ul>
          </li>
           <li class="treeview"><a href="javascript:void(0)"><i class="fa fa-trophy"></i><span><?php echo ('winners'); ?></span></a>
@@ -96,8 +95,8 @@
           <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-trophy')) . "<span>".('Football Winner')."</span>",array('controller' => 'games', 'action' => 'footballResults'),array('escape' => false)); ?></li>
          <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-trophy')) . "<span>".('Hockey Winner')."</span>",array('controller' => 'games', 'action' => 'hockeyResults'),array('escape' => false)); ?></li>
          <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-trophy')) . "<span>".('Soccer Winner')."</span>",array('controller' => 'games', 'action' => 'soccerResults'),array('escape' => false)); ?></li>
-         
-         
+
+
 
          </ul>
          </li>
@@ -158,8 +157,8 @@
          <ul class="treeview-menu" >
          <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-pencil')) . "<span>".('List Writer')."</span>",array('controller' => 'news', 'action' => 'writerlist'),array('escape' => false)); ?></li>
         <li><?php echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-users')) . "<span>".('List online users')."</span>",array('controller' => 'users', 'action' => 'graph'),array('escape' => false)); ?></li>
-        
-         
+
+
 
          </ul>
          </li>

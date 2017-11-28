@@ -25,7 +25,7 @@ ini_set("allow_url_fopen", 1);
     <?php
     $gift_cat = array_map("ucwords", $gift_cat);
     echo $this->Form->input('gift_category_id', array('class' => 'form-control type-location-category', 'id' => 'gift_cat','options' => $gift_cat, 'empty' => __dbt('--Select One--'),"onchange"=>"getGiftlist(this);"));
-    ?> 
+    ?>
 
     <div class="clear"></div>
 </div>
@@ -39,7 +39,7 @@ ini_set("allow_url_fopen", 1);
 <div class="col-sm-12" id="giftimagesrow" style="display:none;">
 <div class="col-sm-4" class="giftimagesrowfirst">
 <a href="#" class="thumbnail">
-      <img alt="Sports" src="/img/sports-logo.png" style="height:50px; width:100px;"/>      
+      <img alt="Sports" src="/img/sports-logo.png" style="height:50px; width:100px;"/>
 </a>
 <div class="checkbox" style="position: absolute; left: 21px; top: -6px;">
   <label><input type="checkbox"  value="" style="position:static !important;"></label>
@@ -77,7 +77,7 @@ ini_set("allow_url_fopen", 1);
      {
       echo $this->Form->input('teams_gameday', array('value' => 0, 'type' => 'hidden','id' =>'gift_gameday'));
       } ?>
-    
+
     <?php echo $this->Form->input('sport_id', array('value' => $sportId, 'type' => 'hidden')); ?>
     <?php echo $this->Form->input('league_id', array('value' => $leagueId, 'type' => 'hidden')); ?>
     <?php echo $this->Form->input('tournament_id', array('value' => $tournamentId, 'type' => 'hidden')); ?>
@@ -85,7 +85,7 @@ ini_set("allow_url_fopen", 1);
     <?php echo '&nbsp;' . $this->Form->submit(__dbt('Save'), array('class' => 'btn from-btn', 'div' => false, 'id'=>'savebtn')); ?>
  <button type="button" class="btn from-btn" data-dismiss="modal">Cancel</button>
      </div>
- <?php echo $this->Form->end(); ?>    
+ <?php echo $this->Form->end(); ?>
 <div class="col-sm-12" id="contentHere"></div>
  <div class="bloger-modal">
     <div class="modal fade" id="putErrorGiftBox" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -102,7 +102,7 @@ ini_set("allow_url_fopen", 1);
             </div>
         </div>
     </div>
-</div> 
+</div>
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <style>#ui-id-1{z-index: 9999 !important;}</style>
@@ -118,7 +118,7 @@ ini_set("allow_url_fopen", 1);
 
     });
     function getGiftlist(obj){
-    $('.admin-amzn-loader').show();
+        $('.admin-amzn-loader').show();
         var gift_cat = $('#gift_cat').val();
         var gifttype = $('#gifttype').val();
         var giftgameday = $('#gift_gameday').val();
@@ -147,13 +147,13 @@ ini_set("allow_url_fopen", 1);
         var jQ = $(obj);
         var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getGiftImagesAjax", $this->params["prefix"] => false)); ?>/"+Base64.encode(jQ.val());
         $.post(url, {id:"id"}, function(data){
-       
-        $('.admin-amzn-loader').hide();
-       
-        $('#giftimagesrow').show();
-        
 
-       
+        $('.admin-amzn-loader').hide();
+
+        $('#giftimagesrow').show();
+
+
+
         $('#giftimagesrow').show();
         if(jQ.val()=="")
         {
@@ -167,33 +167,33 @@ ini_set("allow_url_fopen", 1);
            $('#save_button').show();
           $('#giftimagesrow').html('');
                   obj = JSON.parse(data);
-                
+
                  var length = Object.keys(obj).length;
                 if(length!=3){
                   var roweHtml='<div class="col-md-4"><a class="thumbnail" target="blank" href="#"><img src="/img/sports-logo.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="filecheck" value="" style="position:static !important;"></label></div></div><div class="col-md-4"><a class="thumbnail" target="blank" href="#"><img src="/img/sports-logo.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="filecheck" value="" style="position:static !important;"></label></div></div>';
                   $('#giftimagesrow').append(roweHtml);
 
                 }
-               
+
                   $.each(obj, function (key, data) {
                   var rowHtml='<div class="col-md-4 _col'+key+'"><a class="thumbnail" target="blank" href='+data.Gift.product_link+'><img src='+data.file.path+' style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="filecheck" value="" style="position:static !important;"></label></div></div>';
                   $('#giftimagesrow').append(rowHtml);
                   var classes = ['_g1','_g2','_g3','_g4','_g5','_g6']; var randomnumber = Math.floor(Math.random()*classes.length); $('#giftimagesrow').removeClass().addClass(classes[randomnumber]);
-                   
+
                    $('#notificationbox').html('');
-                   if(data.Gift.winning_no_game=="") 
+                   if(data.Gift.winning_no_game=="")
                    var winninggames='No data';
                    else
                    var winninggames=data.Gift.winning_no_game;
                    var rowsHtml='<p class="form-control" style="text-align:center;">You should predict&nbsp;'+winninggames+'&nbsp;games correct.</p>';
-                   
+
                    $('#notificationbox').append(rowsHtml);
                   /*  $("#filecheck-0").change(function(event){
                   if (this.checked){
                   document.getElementById('errorbox').innerHTML="you checked wrong checkbox";
                   $('#putErrorGiftBox').modal({show: true});
-                   
-                  } 
+
+                  }
 
                   //});
 
@@ -202,9 +202,9 @@ ini_set("allow_url_fopen", 1);
                   if (this.checked){
                   document.getElementById('errorbox').innerHTML="you checked wrong checkbox";
                   $('#putErrorGiftBox').modal({show: true});
-                   
-                  } 
-                  
+
+                  }
+
                   //});
 
                   });
@@ -213,35 +213,35 @@ ini_set("allow_url_fopen", 1);
                   document.getElementById('errorbox').innerHTML="This is Your Gift.";
                   $('#putErrorGiftBox').modal({show: true});
 
-                   
-                  } 
+
+                  }
                   });*/
 
 
 
         });
                   $("#giftimagesrow div:last-child div input:last-child").addClass("last");
-  
+
                   $(".filecheck").change(function(event){
                   if (this.checked){
                   document.getElementById('errorbox').innerHTML="you checked wrong checkbox";
                   $('#putErrorGiftBox').modal({show: true});
-                   
-                  } 
+
+                  }
                   });
-             
+
                   $(".last").change(function(event){
                   if (this.checked){
                   document.getElementById('errorbox').innerHTML="This is Your Gift.";
                   $('#putErrorGiftBox').modal({show: true});
 
-                   
-                  } 
+
+                  }
                   });
 
         }
       });
-    
+
     }
 
  function getRate(){
@@ -249,15 +249,15 @@ ini_set("allow_url_fopen", 1);
             from = 'USD';
             to = document.getElementById('countryid').value;
             cashprice = $('#cashpriceid option:selected').text();
-          
+
             cashamount = document.getElementById('cashpriceid').value;
             $.post("<?php echo $this->Html->url(array("controller"=>"tests","action"=>"getCurrencyRate")); ?>",{'from':from,'to':to,'access_Token':'OO0OO0OO0O0O0O0O0OO0O'},function(data){
                  var Currency=(cashprice*data);
                 //document.getElementById("yahoo-rates").innerHTML = Math.round(Currency);
               if(cashamount!=""){
-            
+
                  $.post("<?php echo $this->Html->url(array("controller"=>"Gifts","action"=>"getcashImagesAjax"));?>",{'cashamount':cashamount},function(result){
-             
+
                   //alert(result);
                   $('.giftimagesrowfirst').hide();
                   $('#giftimagesrow').show();
@@ -265,62 +265,62 @@ ini_set("allow_url_fopen", 1);
                   $('#notificationbox').show();
                   $('#save_button').show();
                   $('#giftimagesrow').html('');
-                
+
                  obj = JSON.parse(result);
                   var cashlength = Object.keys(obj).length;
-                 
+
                   $.each(obj, function (key, data) {
                    // console.log(data);
                   if(cashlength!=3){
                      var rowHtml='<div class="col-md-4"><a class="thumbnail" target="blank" href="#"><img src="/img/sports-logo.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="checkboxcheck" value="" style="position:static !important;"></label></div></div><div class="col-md-4"><a class="thumbnail" target="blank" href="#"><img src="/img/sports-logo.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="checkboxcheck" value="" style="position:static !important;"></label></div></div><div class="col-md-4"><a class="thumbnail" target="blank" href="#"><img src="/img/GiftsImages/1487601352.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="select-box" value="" style="position:static !important;"></label></div></div>';
                  //  $('#giftimagesrow').append(rowHtml);
 
-                  }  
+                  }
                  else if(key!=2){
                   var rowHtml='<div class="col-md-4 _col'+key+'"><a class="thumbnail" target="blank" href=http://'+data.Gift.product_link+'><img src='+data.file.path+' style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input id="filecheck-'+key+'" type="checkbox" class="checkboxcheck" value="" style="position:static !important;"></label></div></div>';
                 }
                 else
                 {
-                  
+
                    var rowHtml='<div class="col-md-4 _col2"><a class="thumbnail" target="blank" href="#"><img src="/img/GiftsImages/1487601352.png" style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" class="select-box" value="" style="position:static !important;"></label></div></div>';
                 }
                   $('#giftimagesrow').append(rowHtml);
                   var classes = ['_g1','_g2','_g3','_g4','_g5','_g6']; var randomnumber = Math.floor(Math.random()*classes.length); $('#giftimagesrow').removeClass().addClass(classes[randomnumber]);
                   $('#yahoo-rates').html('<p class="form-control" style="text-align:center;margin-bottom:5px;">Cash in your currency'+' '+Math.round(Currency)+'('+to+')</p><input type="hidden" name="data[GamesGiftPrediction][cashamount]" value='+Math.round(Currency)+'('+to+')>');
-                 
+
                   $('#notificationbox').html('');
-                 if(data.Gift.winning_no_game=="") 
+                 if(data.Gift.winning_no_game=="")
                  var winninggames='No data';
                  else
                  var winninggames=data.Gift.winning_no_game;
                  var rowsHtml='<p class="form-control" style="text-align:center;">You should predict&nbsp;'+winninggames+'&nbsp;games correct.</p>';
-                 
+
                  $('#notificationbox').append(rowsHtml);
-                  
+
                   });
 
                    $(".checkboxcheck").change(function(event){
                   if (this.checked){
                    document.getElementById('errorbox').innerHTML="you checked wrong checkbox";
                   $('#putErrorGiftBox').modal({show: true});
-                   
-                  } 
+
+                  }
                   //});
 
                   });
                   $(".select-box").change(function(event){
                   if (this.checked){
                   document.getElementById('errorbox').innerHTML="This is Your Gift.";
-                  $('#putErrorGiftBox').modal({show: true});  
-                  } 
+                  $('#putErrorGiftBox').modal({show: true});
+                  }
 
                   });
-                
+
                   });
                }
-          
+
             });
-         
+
         }
   function ClosePutErrorGiftBox()
 { //alert('ok');
@@ -336,7 +336,7 @@ ini_set("allow_url_fopen", 1);
   display:inline-block;
   }
 
-/*#giftimagesrow._g1 ._col0{ 
+/*#giftimagesrow._g1 ._col0{
   }
 #giftimagesrow._g1 ._col1{
   }
@@ -349,11 +349,11 @@ ini_set("allow_url_fopen", 1);
 /*#giftimagesrow._g2 ._col1{
   }*/
 #giftimagesrow._g2 ._col2{
- float: left; 
+ float: left;
   }
 
  #giftimagesrow._g3 ._col0{
-float: right; 
+float: right;
   }
 #giftimagesrow._g3 ._col1{
   float: left;
@@ -362,17 +362,17 @@ float: right;
   } */
 
 #giftimagesrow._g4 ._col0{
-float: right; 
+float: right;
   }
 /*#giftimagesrow._g4 ._col1{
   }*/
 #giftimagesrow._g4 ._col2{
    float: left;
-  } 
+  }
 
 
 #giftimagesrow._g5 ._col0{
-float: left; 
+float: left;
   }
 #giftimagesrow._g5 ._col1{
      float: right;
@@ -388,8 +388,8 @@ float: left;
      float: left;
   }
 #giftimagesrow._g6 ._col2{
-  float: right; 
-} 
+  float: right;
+}
 
 
 </style>

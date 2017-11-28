@@ -19,14 +19,14 @@
                     </div>
                     <!-- MIDDLE CONTENT -->
                     <div class="col-sm-10">
-                        
-            
+
+
                    <div class="inn-title">
                 <h2><i class="fa fa-check" aria-hidden="true"></i> <?php echo __dbt('Cricket Prediction'); ?></h2>
-                <p>          <?php echo $this->Html->link(__dbt("Download Schedule"), array('controller' => 'Games', 'action' => 'scheduleDownload'), array("style" => "float:right;color:#000000;font-size:14px;font-weight:bold;")); ?></p>           
+                <p>          <?php echo $this->Html->link(__dbt("Download Schedule"), array('controller' => 'Games', 'action' => 'scheduleDownload'), array("style" => "float:right;color:#000000;font-size:14px;font-weight:bold;")); ?></p>
                    </div>
-            
-                        
+
+
                           <div class="p-mf">
                 <ul>
                     <!-- TEAM FIXING -->
@@ -35,18 +35,18 @@
                         <div class="mf-2"><img src="/images/coun/empty.png" alt=""></div>
                         <div class="mf-3">
                             <span class="mf-31">
-                              
+
                       <span class="mf-31"><?php echo $this->Paginator->sort('Game.start_time', __dbt('Start Time')); ?></span><span class="mf-32"><?php echo $this->Paginator->sort('Game.end_date', __dbt('End Time')); ?></span>
 
                         </div>
                         <div class="mf-4"><img src="/images/coun/empty.png" alt=""></div>
                         <div class="mf-5"><?php echo $this->Paginator->sort('Second_team.name', __dbt('Second Team')); ?></div>
-                        
+
                         <div class="mf-6"><?php echo __dbt('Time Remaining For Prediction'); ?></div>
-                        
+
                         <div class="mf-7"><?php echo __dbt('Actions'); ?></div>
                     </li>
-                    
+
                        <?php
                                     if (!empty($gameDatas)) {
                                         foreach ($gameDatas as $gameData):
@@ -56,13 +56,13 @@
                         <div class="mf-2"><img src="/images/coun/team1.png" alt=""></div>
                         <div class="mf-3">
                        <span class="mf-31"><?php echo $gameData['Game']['start_time']; ?></span><span class="mf-32"><?php echo $gameData['Game']['end_time']; ?></span>
-                            
-                       
-                            
+
+
+
                         </div>
                         <div class="mf-4"><img src="/images/coun/teams2.png" alt=""></div>
                         <div class="mf-5"><?php echo __dbt($gameData['Second_team']['name']); ?></div>
-                        
+
                         <div class="mf-6"><?php
                                                     $minutes_to_add = 180; // 3hr before
                                                     $time = new DateTime($gameData['Game']['start_time']);
@@ -107,7 +107,7 @@
                                                         echo '<span style="color: rgb(166, 70, 134); margin-top: 10px;">Prediction time over</span>';
                                                     }
                                                     ?></div>
-                        
+
                         <div class="mf-7">   <?php
                                                     $result = $this->Common->getPridictedOrNot($gameData['Game']['id'], $sport = 'cricket');
                                                     if ($result == 0) {
@@ -125,24 +125,24 @@
                                                     }
                                                     ?></div>
                     </li>
-                    
-                    
-                    
-                    
-              
+
+
+
+
+
                                 <?php
                                         endforeach; ?>
                       </ul>
                           </div>
                                    <?php } else {
                                         ?>
-                                       
+
                         <h4 colspan="6" class="text-center"><?php echo __dbt('Upcoming games are not ready for prediction.'); ?> </h4>
-                                       
+
                                     <?php } ?>
-                        
-                        
-               
+
+
+
                     </div>
                     <!-- MIDDLE CONTENT END -->
                 </div>
@@ -157,10 +157,10 @@
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
             <!-- INNER WRAP END -->
         </div>
-        <!-- PROFILE PAGE EMD --> 
+        <!-- PROFILE PAGE EMD -->
     </div>
 </section>
 <!-- MAIN CONTENT END -->

@@ -13,7 +13,7 @@ App::uses('Sanitize', 'Utility');
  */
 class GiftsController extends AppController
 {
-   
+
     /**
      * Components
      *
@@ -25,7 +25,7 @@ class GiftsController extends AppController
         'Session',
         'File',
         'Resizer',
-      
+
     ];
 
     public $helpers = [
@@ -207,28 +207,28 @@ class GiftsController extends AppController
         $sport_id=AuthComponent::User('sportSession.sport_id');
         $league_id =AuthComponent::User('sportSession.league_id');
          if(($gifttype==1) || ($gifttype=='')){
-        
+
             $options = $this->Gift->find('list', [
                         'conditions' => [
                             'type' => $gifttype,
                             'tournament_id' => array($tournament_id,0),
                             'league_id' => array($league_id,0),
                             'sport_id' => array($sport_id,0),
-                            'gift_category_id'=>array($gift_cat,0),   
-                            'game_day' =>array($gift_gameday,0),   
+                            'gift_category_id'=>array($gift_cat,0),
+                            'game_day' =>array($gift_gameday,0),
                             'status' =>1,
                             'is_deleted' =>0,
-                                                                             
+
                         ],
                         'fields' => [
                              'name'
                         ],
                          'order' => ['id' => 'DESC'],
-                        
+
                     ]);
 
-        
-    
+
+
         echo $this->View->Form->input('GamesGiftPrediction.gift_id', [
             'class' => 'form-control',
             'label' => 'Gift Name',
@@ -239,8 +239,8 @@ class GiftsController extends AppController
     }
    else
     {
-      
-       
+
+
 
         /*$this->Gift->query("Select id, 'abc' as dummy_col
     FROM `gifts` WHERE type=$id and tournament_id= $tournament_id and league_id=$league_id and sport_id=$sport_id and status=1 and is_deleted=0;");*/
@@ -251,9 +251,9 @@ class GiftsController extends AppController
                         ],
                        'order' => ['Countries.Country' => 'ASC'],
                         // 'order' => 'Country'
-                        
+
                     ]);
-            
+
 
 //print_r($country);exit;
      echo '<div class ="input select" style="margin-bottom:5px;">'.$this->View->Form->input('', ['class' => 'form-control','id' => 'countryid','label' => 'Country', 'empty' => '-- Select one --', 'options' => $country,'onchange' => 'getRate();'
@@ -264,17 +264,17 @@ class GiftsController extends AppController
                         'conditions' => [
                             'type' => $gifttype,
                             //'gift_category_id' =>$gift_cat,
-                            'game_day' =>array($gift_gameday,0),  
+                            'game_day' =>array($gift_gameday,0),
                             'tournament_id' => array($tournament_id,0),
                             'league_id' => array($league_id,0),
                             'sport_id' => array($sport_id,0),
                             'status' =>1,
                             'is_deleted' =>0,
-                                                                             
+
                         ],
                'fields' => array('amount'),
                          'order' => ['id' => 'DESC'],
-                        
+
                     ]);
 
     // print_r($options);exit;
@@ -301,13 +301,13 @@ class GiftsController extends AppController
             )
         );
        //echo'<pre>';print_r($cash_images);exit;
-     
+
        foreach($cash_images as $cashimage)
-       { 
+       {
       echo '<div class="col-sm-4" id="realimage-box"><a class="thumbnail" href=http://'.$cashimage['Gift']['product_link'].'><img src='.$cashimage['file']['path'].' style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" value="" style="position:static !important;"></label></div></div>';
        }*/
-       
-      
+
+
     }
 }
 
@@ -317,16 +317,16 @@ class GiftsController extends AppController
         $this->layout = false;
         $this->autoRender = false;
         $id = base64_decode($id);
-       
+
         $tournament_id = AuthComponent::User('sportSession.tournament_id');
         $sport_id=AuthComponent::User('sportSession.sport_id');
         $league_id =AuthComponent::User('sportSession.league_id');
-      /* $randomegiftimages=$this->set('random_posts', $this->Gift->find('first', array( 
+      /* $randomegiftimages=$this->set('random_posts', $this->Gift->find('first', array(
        'conditions' => array('tournament_id' => $tournament_id,
                             'league_id' => $league_id,
                             'sport_id' => $sport_id,
                             'status' =>1,
-                            'is_deleted' =>0), 
+                            'is_deleted' =>0),
        'order' => 'rand()',
        'limit' => 2,
         )));*/
@@ -384,7 +384,7 @@ class GiftsController extends AppController
          $allimages=array_merge($giftrandomimage,$giftimages);
         if(sizeof($allimages)==3)
         {
-          
+
           echo json_encode(array_merge($giftrandomimage,$giftimages));die;
        }
        elseif(!empty($giftimages) && (sizeof($allimages)<3))
@@ -392,19 +392,19 @@ class GiftsController extends AppController
         echo json_encode($giftimages);die;
        }
       else
-      
+
       {
           $options = $this->Gift->find('first', array(
             'fields' => array('Gift.winning_no_game'),
-            
-             'conditions'=>array(    
+
+             'conditions'=>array(
                             'Gift.id' => $id,
-                            
-                                                                             
+
+
                         )
             )
         );
-       
+
         echo json_encode($options);exit;
       }
     }
@@ -416,7 +416,7 @@ class GiftsController extends AppController
         $this->loadModel('Gift');
        // $this->response->type('json');
         $cashamount = $_POST['cashamount'];
-       
+
         //echo $cashamount = $_POST['cashamount'];
         $tournament_id = AuthComponent::User('sportSession.tournament_id');
         $sport_id=AuthComponent::User('sportSession.sport_id');
@@ -441,7 +441,7 @@ class GiftsController extends AppController
             'limit' => 2,
             )
         );
-      
+
      /*
          $options = $this->Gift->find('all', array(
            // 'fields' => array('("/img/GiftsImages/1487570931.png") as path','Gift.product_link','Gift.winning_no_game'),
@@ -460,12 +460,12 @@ class GiftsController extends AppController
             )
         );*/
         $options =$this->Gift->query("SELECT IFNULL(`file`.`path`,'/img/GiftsImages/1487601352.png') AS `path`, `Gift`.`product_link`, `Gift`.`winning_no_game` FROM `gifts` AS `Gift` LEFT JOIN `files` AS `File` ON (`Gift`.`file_id` = `File`.`id`) LEFT JOIN `locations` AS `Location` ON (`Gift`.`location_id` = `Location`.`id`) LEFT JOIN `gift_categories` AS `GiftCategory` ON (`Gift`.`gift_category_id` = `GiftCategory`.`id`) LEFT JOIN `sports` AS `Sport` ON (`Gift`.`sport_id` = `Sport`.`id`) LEFT JOIN `tournaments` AS `Tournament` ON (`Gift`.`tournament_id` = `Tournament`.`id`) LEFT JOIN `leagues` AS `League` ON (`Gift`.`league_id` = `League`.`id`) left JOIN `files` AS `file` ON (`file`.`id` =`Gift`.`file_id`) WHERE `Gift`.`id` = '".$cashamount."'" );
-      
+
         // print_r($options);exit;
            $allimages=array_merge($cash_images,$options);
             if(sizeof($allimages)==3)
             {
-              
+
               echo json_encode(array_merge($cash_images,$options));die;
            }
            else
@@ -486,11 +486,11 @@ class GiftsController extends AppController
              'conditions'=>array('Gift.id' => $id)
             )
         );*/
-     
+
        //echo'<pre>';print_r($cash_images);exit;
-     
+
      /*  foreach($cash_images as $cashimage)
-       { 
+       {
       echo '<div class="col-sm-4" id="realimage-box"><a class="thumbnail" href=http://'.$cashimage['Gift']['product_link'].'><img src='.$cashimage['file']['path'].' style="height:50px; width:100px;" alt="Sports"></a><div class="checkbox" style="position: absolute; left: 21px; top: -6px;"><label><input type="checkbox" value="" style="position:static !important;"></label></div></div>';
        }*/
     }
@@ -498,7 +498,7 @@ class GiftsController extends AppController
     {
         $this->loadModel('Game');
         $this->layout = false;
-        $this->autoRender = false; 
+        $this->autoRender = false;
          $sportid = base64_decode($sport_id);
          $tournamentid = base64_decode($tournament_id);
          $leagueid = base64_decode($league_id);
@@ -512,12 +512,12 @@ class GiftsController extends AppController
                             'Game.teams_gameday' =>$game_day,
                             'Game.status' =>1,
                             'Game.is_deleted' =>0,
-                                                                             
+
                         ],
                          'fields' => [
                              'teams_gameday'
                         ],
-                         
+
                     ]);
        /*  $totalgameday = $this->Game->find('list', [
                         'conditions' => [
@@ -528,11 +528,11 @@ class GiftsController extends AppController
                             'teams_gameday' =>$game_day,
                             'status' =>1,
                             'is_deleted' =>0,
-                                                                             
+
                         ],
                         ]);*/
          print_r($totalgameday);
-       
+
     }
 
       public function randomgiftlist()
@@ -540,12 +540,12 @@ class GiftsController extends AppController
         $tournament_id = AuthComponent::User('sportSession.tournament_id');
         $sport_id=AuthComponent::User('sportSession.sport_id');
         $league_id =AuthComponent::User('sportSession.league_id');
-        $this->set('random_posts', $this->Gift->find('all', array( 
+        $this->set('random_posts', $this->Gift->find('all', array(
        'conditions' => array('tournament_id' => $tournament_id,
                             'league_id' => $league_id,
                             'sport_id' => $sport_id,
                             'status' =>1,
-                            'is_deleted' =>0), 
+                            'is_deleted' =>0),
        'order' => 'rand()',
        'limit' => 2,
     )));
@@ -595,7 +595,6 @@ class GiftsController extends AppController
     {
         $this->set('title_for_layout', 'Add Gifts');
         if ($this->request->is('post'))
-               //pr($this->request->data);exit;
         {
             if ($this->request->data['Gift']['type'] == 2)
             {
@@ -610,9 +609,9 @@ class GiftsController extends AppController
                 $imgType = $this->checkMimeTypeApp($tmpName);
                 if ($imgType == 0)
                 {
-                    //$this->Flash->error(__('Invalid Image.'));
-                    //$this->redirect($this->referer());
-                    return 'selectvalidimage';
+                    $this->Flash->error(__('Invalid Image.'));
+                    $this->redirect($this->referer());
+                    // return 'selectvalidimage';
                 }
 
                 $exten = explode('.', $this->data['Gift']['file_id']['name']);
@@ -621,10 +620,10 @@ class GiftsController extends AppController
                     $imageSize = getimagesize($this->data['Gift']['file_id']['tmp_name']);
                     if ($imageSize[0] <= 347 && $imageSize[1] <= 477)
                     {
-                        //$this->Flash->error(__('Please upload image greater than 348 (w) X 478 (h) dimension.'));
-                        return 'uploadbigimage';
-                       // return $this->redirect($this->referer());
-                       
+                        $this->Flash->error(__('Please upload image greater than 348 (w) X 478 (h) dimension.'));
+                        // return 'uploadbigimage';
+                        return $this->redirect($this->referer());
+
                     }
                     $filename = time() . '.' . $exten[1];
                     $file1 = $this->data['Gift']['file_id'];
@@ -645,47 +644,43 @@ class GiftsController extends AppController
                         $this->request->data['Gift']['file_id'] = $upload_info['db_info']['Upload']['id'];
                         if ($this->Gift->save($this->request->data))
                         {
-                            //$this->Flash->success(__('The gifts has been saved.'));
-                           /* return $this->redirect([
+                            $this->Flash->success(__('The gifts has been saved.'));
+                            return $this->redirect([
                                 'action' => 'index'
-                            ]);*/
-                            return 'save';
-                            
+                            ]);
+                            // return 'save';
+
                         }
-                        //$this->Flash->error(__('The gifts could not be saved. Please, try again.'));
-                        return 'datanotsaved';
+                        $this->Flash->error(__('The gifts could not be saved. Please, try again.'));
+                        // return 'datanotsaved';
                     }
                     else
                     {
-                       // $this->Flash->error(__('Unable to upload Image and save record. Please, try again.'));
-                        return 'unabletouploadimage';
+                       $this->Flash->error(__('Unable to upload Image and save record. Please, try again.'));
+                        // return 'unabletouploadimage';
                     }
                 }
                 else
                 {
-                   // $this->Flash->error(__('Please select a valid image format. gif, jpg, png, jpeg are allowed only'));
-                    return 'selectvalidimage';
+                   $this->Flash->error(__('Please select a valid image format. gif, jpg, png, jpeg are allowed only'));
+                    // return 'selectvalidimage';
                 }
             }
             else
             {
                 unset($this->request->data['Gift']['file_id']);
                 $this->Gift->create();
-                // $datas=$this->request->data;
-                // print_r($datas);exit;
                 if ($this->Gift->save($this->request->data))
-                {echo 'save';die;
-                    
-                   /* return $this->redirect([
+                {
+                    $this->Flash->success(__('The gifts has been saved.'));
+                    return $this->redirect([
                         'action' => 'index'
-                    ]);*/
-                   
+                    ]);
                 }
-               // $this->Flash->error(__('The gifts could not be saved. Please, try again.'));
-                 echo 'datanotsaved';die;
+                $this->Flash->error(__('The gifts could not be saved. Please, try again.'));
             }
         }
-        
+
         $gift_cat = $this->GiftCategory->find('list');
         $gift_cat['0'] = 'All';
         $location = $this->Location->find('list');
@@ -711,7 +706,7 @@ class GiftsController extends AppController
     public function admin_edit($id = null)
     {
         $this->set('title_for_layout', 'Update Gifts');
-        
+
         if (! $this->Gift->exists($id))
         {
             throw new NotFoundException(__('Invalid gifts'));
@@ -727,28 +722,28 @@ class GiftsController extends AppController
                 $this->request->data['Gift']['product_link'] = '';
                 unset($this->request->data['Gift']['file_id']);
             }
-            
+
             if ($this->data['Gift']['file_id']['name'])
             {
                 $tmpName = $this->data['Gift']['file_id']['tmp_name'];
                 $imgType = $this->checkMimeTypeApp($tmpName);
-                
+
                 if ($imgType == 0)
                 {
                     $this->Flash->error(__('Invalid Image.'));
                     $this->redirect($this->referer());
                 }
-                
+
                 $imageSize = getimagesize($this->data['Gift']['file_id']['tmp_name']);
-                
+
                 if ($imageSize[0] <= 347 && $imageSize[1] <= 477)
                 {
                     $this->Flash->error(__('Please upload image greater than 348 (w) X 478 (h) dimension.'));
                     return $this->redirect($this->referer());
                 }
-                
+
                 $exten = explode('.', $this->data['Gift']['file_id']['name']);
-                
+
                 if ($exten[1] == 'GIF' || $exten[1] == 'gif' || $exten[1] == 'jpg' || $exten[1] == 'jpeg' || $exten[1] == 'PNG' || $exten[1] == 'png' || $exten[1] == 'JPG' || $exten[1] == 'JPEG')
                 {
                     $filename = time() . '.' . $exten[1];
@@ -819,7 +814,7 @@ class GiftsController extends AppController
         $sports = $this->Game->Sport->find('list', [
             'order' => 'Sport.name'
         ]);
-        
+
         $tournaments = $this->Tournament->find('list', [
             'conditions' => [
                 'Tournament.status' => Tournament::STATUS_ACTIVE,
@@ -827,7 +822,7 @@ class GiftsController extends AppController
             ],
             'order' => 'Tournament.name'
         ]);
-        
+
         $leagues = $this->League->find('list', [
             'conditions' => [
                 'League.status' => 1,
@@ -835,7 +830,7 @@ class GiftsController extends AppController
             ],
             'order' => 'League.name'
         ]);
-        
+
         $this->set(compact('sports', 'tournaments', 'leagues'));
     }
 
@@ -1435,7 +1430,7 @@ class GiftsController extends AppController
             echo '{"":"Gift location not exists."}';
         }
     }
-    
+
         public function admin_importData(){
         $result = 'success';
         Configure::write('debug', 1);
@@ -1505,19 +1500,19 @@ class GiftsController extends AppController
             'M' => 'amount',
             'N' => 'product_link',
             'O' => 'winning_no_game'
-         
+
         );
 
         $status_arr = array(
             'inactive' => 0,
             'active' => 1,
             );
-        
+
          $gifttype_arr = array(
             'Gifts' => 1,
             'Cash Order' => 2,
             );
-         
+
         $giftcategory_arr = array(
             'All' => 0,
             'Male' => 1,
@@ -1545,24 +1540,24 @@ class GiftsController extends AppController
                         {
                             $sport_id = $sport_keys[$value];
                             $value = $sport_id;
-                         
+
                         }else{
                             $is_rowValid = false;
                         }
                     }
                     if($col == 'C')
                     {
-                    
+
                         if(!is_null($sport_id))
                         {
-                               
+
                             $tournament_keys = self::covertArray($tournaments[$sport_id]);
                             if(isset($tournament_keys[$value]))
                             {
 
                                 $tournament_id = $tournament_keys[$value];
                                 $value = $tournament_id;
-                                $is_rowValid = true;    
+                                $is_rowValid = true;
                             }else{
                                 $is_rowValid = false;
                             }
@@ -1589,7 +1584,7 @@ class GiftsController extends AppController
                            if (new DateTime($value)){
                                 $start_time = new DateTime($value);
                                 $value = date_format($start_time, 'Y-m-d H:i:s');
-                              
+
                             }else{
                                 $is_rowValid = false;
                             }
@@ -1630,12 +1625,12 @@ class GiftsController extends AppController
                         $value = isset($status_arr[$value])? $status_arr[$value] : 1;
                     }
 
-               
+
                            if($col == 'M')
                     {
                        $value = intval($value);
                     }
-              
+
                     if($col == 'O')
                     {
                        $value = intval($value);
@@ -1643,18 +1638,18 @@ class GiftsController extends AppController
                     if(!$is_rowValid)
                         break;
                     $gift_item[$colIndexArr[$col]] = $value;
-                 
+
                 }
-            
+
                 if($is_rowValid){
-                    $giftObjects[] = $gift_item;  
+                    $giftObjects[] = $gift_item;
                 }
             }
         }
-        
+
         if(count($giftObjects))
         {
-          
+
             $this->Gift->saveAll($giftObjects);
         }
         if (count($giftObjects))
@@ -1680,6 +1675,6 @@ class GiftsController extends AppController
         }
         return $result;
     }
-    
-    
+
+
 }

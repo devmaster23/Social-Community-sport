@@ -3,9 +3,9 @@
 </style>
 <div class="space-15">
     <?php echo $this->Form->create('CricketPrediction', array('url' => array('controller' => 'Games', 'action' => 'cricketPrediction'), "class" => "form-horizontal")); ?>
-  
+
     <div class="row predicdion-box  after-radio" id="after_radio">
-        
+
        <div class="col-xs-12 col-sm-6">
             <?php echo $this->Form->input('first_team_score', array('class' => 'inbox form-control','div' => false)); ?>
         </div>
@@ -20,13 +20,16 @@
         <div class="col-lg-12" id="innhtmlhere"></div>
 
     </div>
-      <div class="row predicdion-box before-radio" id="before_radio">
+    <div class="row predicdion-box before-radio" id="before_radio">
         <?php echo $this->element('sports/sport_prediction'); ?>
     </div>
-    <div class="row predicdion-box before-radio" id="before_radio">      <div class="col-xs-12"><?php echo '&nbsp;' . $this->Form->submit(__dbt('Save Prediction'), array('type' => 'submit', 'class' => 'btn from-btn', 'div' => false)); ?>
-</div>
-                <div class="col-lg-12 text-right goback" style="margin-bottom:20px;"><?php echo __dbt("Go Back");?></div>
-</div>
+    <div class="row predicdion-box before-radio" id="before_radio">
+        <div class="col-md-6 col-sm-6 goback" style="margin-bottom:20px;">
+            <?php echo __dbt("Go Back");?>
+        </div>
+        <div class="col-md-6 col-sm-6"><?php echo '&nbsp;' . $this->Form->submit(__dbt('Save Prediction'), array('type' => 'submit', 'class' => 'btn from-btn', 'div' => false)); ?>
+        </div>
+    </div>
     <?php echo $this->Form->end(); ?>
 </div>
 
@@ -70,7 +73,7 @@
 //            to = document.getElementById('to').value;
 //            $.post("<?php echo $this->Html->url(array("controller" => "games", "action" => "getCurrencyRate")); ?>",{'from':from,'to':to,'access_Token':'OO0OO0OO0O0O0O0O0OO0O'},function(data){
 //                document.getElementById("yahoo-rates").innerHTML = data;
-//                
+//
 //                $('.calcamount').each(function(){
 //                    var amt = data*parseFloat($(this).data('amount'));
 //                    $(this).html(amt);

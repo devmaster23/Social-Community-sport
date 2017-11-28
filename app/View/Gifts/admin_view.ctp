@@ -2,7 +2,7 @@
 	<h1><?php echo __dbt('View Gift'); ?>
 	  <small><?php echo __dbt('Gifts Details'); ?></small>
 	</h1>
-	 <?php echo $this->element($elementFolder.'/breadcrumb'); ?>
+	<?php echo $this->element($elementFolder . '/breadcrumb', array('title' => 'Gifts', 'controller' => 'gifts')); ?>
 </section>
 <section class="content">
 	<div class="row">
@@ -24,7 +24,7 @@
 						  <td><?php echo h($gifts['Gift']['name']); ?></td>
 						</tr>
 						<tr>
-						  
+
 						  <td><?php if($gifts['Gift']['type']==1){
                                                                 echo __dbt('Product Price');
                                                             }else if($gifts['Gift']['type']==2){
@@ -32,7 +32,7 @@
                                                             }?></td>
                                                   <td><?php echo $gifts['Gift']['amount']; ?></td>
 						</tr>
-                                                
+
                                                 <?php if($gifts['Gift']['type']==1){?>
 						<tr>
 						  <td><?php echo __dbt('Product Link'); ?></td>
@@ -51,15 +51,11 @@
 						  <td><?php echo __dbt('League'); ?></td>
 						  <td><?php if($gifts['League']['id'] == 0){ echo h('NA');}else{ echo h($gifts['League']['name']); } ?></td>
 						</tr>
-                                                <tr>
-						  <td><?php echo __dbt('Start Date'); ?></td>
-						  <td><?php echo h($gifts['Gift']['start_date']); ?></td>
+                        <tr>
+						  <td><?php echo __dbt('Game Day'); ?></td>
+						  <td><?php echo h($gifts['Gift']['game_day']); ?></td>
 						</tr>
-                                                <tr>
-						  <td><?php echo __dbt('End Date'); ?></td>
-						  <td><?php echo h($gifts['Gift']['end_date']); ?></td>
-						</tr>
-                                                
+
                                                 <?php if($gifts['Gift']['type']==1){?>
 						<tr>
 						  <td><?php echo __dbt('Gift Image'); ?></td>
@@ -70,7 +66,7 @@
 						  <td><?php echo __dbt('Status'); ?></td>
 						  <td><?php echo h($gifts['Gift']['status_name']); ?></td>
 						</tr>
-		
+
 						<tr>
 						  <td><?php echo __dbt('Created'); ?></td>
 						  <td><?php echo h($gifts['Gift']['created']); ?></td>
@@ -82,7 +78,7 @@
 				      </tbody>
 				</table>
 			</div>
-		</div>	
+		</div>
 	  </div>
 	 </div>
 </section>

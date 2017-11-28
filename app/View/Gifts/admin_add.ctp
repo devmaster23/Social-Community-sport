@@ -7,7 +7,7 @@
     <h1><?php echo __dbt('Add Gifts'); ?>
         <small><?php echo __dbt('Admin Add Gifts'); ?></small>
     </h1>
-    <?php echo $this->element($elementFolder . '/breadcrumb'); ?>
+    <?php echo $this->element($elementFolder . '/breadcrumb', array('title' => 'Gifts', 'controller' => 'gifts')); ?>
 </section>
 <section class="content">
     <div class="row">
@@ -41,30 +41,19 @@
                         <?php echo $this->Form->input('league_id',array('class'=>'form-control','label' => false,'empty'=>__dbt('-- select league --'))); ?>
                          </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputStartDate"><?php echo __dbt('Start Date'); ?></label>
-                        <div class="col-sm-4">
-                                <?php echo $this->Form->input('start_date', array("type"=>"text",'data-field'=>'datetime',"class"=>"form-control",'label' => false));  ?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputEndDate"><?php echo __dbt('End Date'); ?></label>
-                        <div class="col-sm-4">
-                                <?php echo $this->Form->input('end_date', array("type"=>"text",'data-field'=>'datetime',"class"=>"form-control",'label' => false));  ?>
-                        </div>
-                    </div>
+
                      <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Game Day'); ?></label>
                         <div class="col-sm-4" id="gameday">
-                            
-                                                        <?php  
+
+                                                        <?php
                                                         $options=array_combine(range(1,99,1),range(1,99,1));
                                                         array_unshift($options, "All");
                                                         echo $this->Form->input('game_day', array("type"=>"select", "value"=>"",'options' => $options,
                                                         'empty' =>__dbt('-- Select Game Day --'),"class"=>"form-control",'label' => false,"onchange"=>"changewinninggames(this);"));
-                                                       
+
                                                         ?>
-                                                
+
 
                         </div>
                     </div>
@@ -98,18 +87,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Location');
-
-                        ?></label>
-                        <div class="col-sm-4">
-                            <?php
-                            //$gift_cat = array_map("ucwords", $location);
-                            echo $this->Form->input('location_id', array('type'=>'text','class' => 'form-control', 'label' => false, 'placeholder' => 'Enter gift location'));
-                            ?>
-                        </div>
-                    </div>
-                   
-                    <div class="form-group">
                         <label class="col-sm-2 control-label amt" for="inputEmail3"><?php echo __dbt('Amount'); ?></label>
                         <div class="col-sm-4">
 <?php echo $this->Form->input('amount', array('class' => 'form-control', 'label' => false,'type'=>'text')); ?>
@@ -138,7 +115,7 @@
                             <span style="color: red;display:none;" id="file_errors"></span>
                         </div>
                     </div>
-             
+
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Status'); ?></label>
                         <div class="col-sm-4">
@@ -149,7 +126,7 @@
                         </div>
                     </div>
                     </div>
-          
+
                   <a href="javascript:void(0)" class="addmore" style="display:none;" onclick=" return addmore();">ADD More Gift +</a>
                     <div class="box-footer">
                         <div class="col-sm-4 control-label">
@@ -246,30 +223,30 @@
     	{
     		alert.show();
     		return false;
-    	}  	
+    	}
     	return true;
     });
 
     function getTournaments(obj){
         $('.admin-amzn-loader').show();
         var jQ = $(obj);
-       // if all sport selected then select all tournament and league 
+       // if all sport selected then select all tournament and league
        if(jQ.val() == 0){
                 var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getTournamentsAjax", $this->params["prefix"] => false)); ?>/"+'0';
                 $.post(url, {id:"id"}, function(data){
                 $('.admin-amzn-loader').hide();
                 $("#GiftWinningNoGame").val('');
                 $("#tournament-box").html(data);
-                
+
                 });
-                
+
                 var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getLeaguesAjax", $this->params["prefix"] => false)); ?>/"+'0';
                 $.post(url, {id:"id"}, function(data){
                     $('.admin-amzn-loader').hide();
                     $("#GiftWinningNoGame").val('');
                     $("#league-box").html(data);
                 });
-           
+
        } else {
                 var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getTournamentsAjax", $this->params["prefix"] => false)); ?>/"+jQ.val();
                 $.post(url, {id:"id"}, function(data){
@@ -312,7 +289,7 @@ function getwinninggameno(obj)
     if((sport_id!='')&& (tournament_id!='') && (league_id!='') && (winning_game!='') && (gameday!='')){
     var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getGamesDaysAjax", $this->params["prefix"] => false)); ?>/"+Base64.encode(sport_id)+"/"+Base64.encode(tournament_id)+"/"+Base64.encode(league_id)+"/"+Base64.encode(winning_game)+"/"+Base64.encode(gameday);
                 $.post(url, {sport_id:"sport_id",tournament_id:"tournament_id",league_id:"league_id",winning_game:"winning_game",gameday:"gameday"}, function(data){
-                 
+
                  $('.admin-amzn-loader').hide();
                    if(parseInt(data)==0)
                  {
@@ -332,52 +309,51 @@ function getwinninggameno(obj)
                   $("#gameno_errors").html('');
                  }
                  }
-                 
-                
+
+
             });
-  
+
+        }
 }
-}
-  
 
-  $("form#GiftAdminAddForm").submit(function(){
-
-    var formData = new FormData($(this)[0]);
-
-    $.ajax({
-        url: $(this).attr('action'),
-        type: 'POST',
-        data: formData,
-        async: false,
-        success: function (data) {
-       // alert(data);
-         if(data=='uploadbigimage')
-         {
-         $("#file_errors").show();
-          $("#file_errors").html('Please upload image greater than 348 (w) X 478 (h) dimension.');
-         }
-         if(data=='unabletouploadimage'){
-           $("#file_errors").show();
-          $("#file_errors").html('Unable to upload Image and save record. Please, try again.');
-         }
-         if(data=='selectvalidimage')
-         {
-           $("#file_errors").show();
-          $("#file_errors").html('Please select a valid image format. gif, jpg, png, jpeg are allowed only');
-         }
-          if(data=='save'){
-         $(".addmore").show();
-         $("#dynamicFormContent").hide();
-         }       
-
-        },
-        cache: false,
-        contentType: false, 
-        processData: false
-    });
-
-    return false;
-});
+//   $("form#GiftAdminAddForm").submit(function(){
+//
+//     var formData = new FormData($(this)[0]);
+//
+//     $.ajax({
+//         url: $(this).attr('action'),
+//         type: 'POST',
+//         data: formData,
+//         async: false,
+//         success: function (data) {
+//        // alert(data);
+//          if(data=='uploadbigimage')
+//          {
+//          $("#file_errors").show();
+//           $("#file_errors").html('Please upload image greater than 348 (w) X 478 (h) dimension.');
+//          }
+//          if(data=='unabletouploadimage'){
+//            $("#file_errors").show();
+//           $("#file_errors").html('Unable to upload Image and save record. Please, try again.');
+//          }
+//          if(data=='selectvalidimage')
+//          {
+//            $("#file_errors").show();
+//           $("#file_errors").html('Please select a valid image format. gif, jpg, png, jpeg are allowed only');
+//          }
+//           if(data=='save'){
+//          $(".addmore").show();
+//          $("#dynamicFormContent").hide();
+//          }
+//
+//         },
+//         cache: false,
+//         contentType: false,
+//         processData: false
+//     });
+//
+//     return false;
+// });
 
 function addmore()
 {

@@ -6,7 +6,7 @@
     <h1><?php echo __dbt('Edit Gifts'); ?>
         <small><?php echo __dbt('Admin Edit Gifts'); ?></small>
     </h1>
-    <?php echo $this->element($elementFolder . '/breadcrumb'); ?>
+    <?php echo $this->element($elementFolder . '/breadcrumb', array('title' => 'Gifts', 'controller' => 'gifts')); ?>
 </section>
 <section class="content">
     <div class="row">
@@ -20,7 +20,7 @@
                     echo $this->Form->create('Gift', array('class' => 'form-horizontal', "enctype" => "multipart/form-data"));
                     $this->Form->inputDefaults(array('required' => false));
                     echo $this->Form->hidden('id'); ?>
-                    
+
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputSportid"><?php echo __dbt('Sport'); ?></label>
                         <div class="col-sm-4">
@@ -39,36 +39,24 @@
                         <?php echo $this->Form->input('league_id',array('class'=>'form-control','label' => false, 'options'=>$leagues, 'empty'=>__dbt('-- select league --'))); ?>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputStartDate"><?php echo __dbt('Start Date'); ?></label>
-                        <div class="col-sm-4">
-                                <?php echo $this->Form->input('start_date', array("type"=>"text",'data-field'=>'datetime',"class"=>"form-control",'label' => false));  ?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputEndDate"><?php echo __dbt('End Date'); ?></label>
-                        <div class="col-sm-4">
-                                <?php echo $this->Form->input('end_date', array("type"=>"text",'data-field'=>'datetime',"class"=>"form-control",'label' => false));  ?>
-                        </div>
-                    </div>
                      <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Game Day'); ?></label>
                         <div class="col-sm-4" id="gameday">
-                            
-                                                        <?php  
+
+                                                        <?php
                                                         $no_options=array_combine(range(1,99,1),range(1,99,1));
                                                         array_unshift($no_options, "All");
                                                         echo $this->Form->input('game_day', array("type"=>"select", 'options' =>$no_options ,
                                                         'empty' =>__dbt('-- Select Game Day --'),"class"=>"form-control",'label' => false,"onchange"=>"changewinninggames(this);"));
-                                                       
+
                                                         ?>
-                                                
+
 
                         </div>
                         </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Gift Category');
-                        
+
                         ?></label>
                         <div class="col-sm-4">
                             <?php
@@ -83,22 +71,10 @@
                             <?php echo $this->Form->input('name', array('class' => 'form-control', 'label' => false)); ?>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Location');
-                        
-                        ?></label>
-                        <div class="col-sm-4">
-                            <?php
-                            $gift_cat = array_map("ucwords", $location);
-                            //echo $this->Form->input('location_id', array('class' => 'form-control', 'label' => false, 'options' => $location, 'empty' => '--select one--'));
-                            echo $this->Form->input('location_id', array('type'=>'text','class' => 'form-control', 'label' => false, 'placeholder' => 'Enter gift location'));
-                            ?>
-                        </div>
-                    </div>
-                    
+
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Type');
-                        
+
                         ?></label>
                         <div class="col-sm-4">
                             <?php
@@ -108,7 +84,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label amt" for="inputEmail3"><?php 
+                        <label class="col-sm-2 control-label amt" for="inputEmail3"><?php
                         if($this->request->data['Gift']['type']==1){
                             echo __dbt('Product Price');
                         }else if($this->request->data['Gift']['type']==2){
@@ -134,7 +110,7 @@
                             <span style="color: red;display:none;" id="gameno_errors"></span>
                         </div>
                         </div>
-                    
+
                     <div class="form-group <?php if($this->request->data['Gift']['type']==2){echo 'only-for-gift-none';}else{echo 'only-for-gift-block';}?>" id="gi">
                         <label class="col-sm-2 control-label" for="inputEmail3"><?php echo __dbt('Gifts Image'); ?></label>
                         <div class="col-sm-4">
@@ -162,7 +138,7 @@
 echo $this->Form->input('status', array("type" => "select", 'class' => 'form-control', 'label' => false, "options" => $status_options, 'empty' => '-- select status --'));
 ?>
                         </div>
-                    </div>  
+                    </div>
                     <div class="box-footer">
                         <div class="col-sm-4 control-label">
 <?php echo $this->Form->submit('Submit', array('type' => 'submit', 'class' => 'btn btn-primary', 'div' => false, 'id' => 'submitPoll')); ?>
@@ -182,7 +158,7 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
     source: "<?php echo $this->Html->url(array('controller' => 'Gifts', 'action' => 'admin_searchGiftLocation')); ?>",
     minLength: 2,
     });
-    
+
     $(document).on('click', '#changeImage', function() {
         $("#ItemAttachment").css('display', 'block');
         $("#changeImage").css('display', 'none');
@@ -190,10 +166,10 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
         $('.image-preview').css('display', 'none');
         $('.actin-div').css('display', 'none');
     });
-    
+
 
     $(document).ready(function(){
-        $("#dtBox1").DateTimePicker({                   
+        $("#dtBox1").DateTimePicker({
             dateTimeFormat: "yyyy-MM-dd hh:mm:ss"
         });
         $(document).on('change','#GiftType',function(){
@@ -222,7 +198,7 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
             }
         });
     });
-    
+
     function getTournaments(obj){
         $('.admin-amzn-loader').show();
         var jQ = $(obj);
@@ -233,7 +209,7 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
             $("#tournament-box").html(data);
         });
     }
-    
+
     function getLeagues(obj){
     $('.admin-amzn-loader').show();
         var jQ = $(obj);
@@ -242,7 +218,7 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
         $('.admin-amzn-loader').hide();
         $("#GiftWinningNoGame").val('');
         $("#league-box").html(data);
-        });        
+        });
     }
     function getwinninggameno(obj)
 {
@@ -256,7 +232,7 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
     if((sport_id!='')&& (tournament_id!='') && (league_id!='') && (winning_game!='') && (gameday!='')){
     var url = "<?php echo $this->Html->url(array("controller"=>"Gifts", "action"=>"getGamesDaysAjax", $this->params["prefix"] => false)); ?>/"+Base64.encode(sport_id)+"/"+Base64.encode(tournament_id)+"/"+Base64.encode(league_id)+"/"+Base64.encode(winning_game)+"/"+Base64.encode(gameday);
                 $.post(url, {sport_id:"sport_id",tournament_id:"tournament_id",league_id:"league_id",winning_game:"winning_game",gameday:"gameday"}, function(data){
-                 
+
                  $('.admin-amzn-loader').hide();
                  var comparison=parseInt(data)<parseInt(winning_game);
                  if(comparison==true){
@@ -268,10 +244,10 @@ echo $this->Form->input('status', array("type" => "select", 'class' => 'form-con
                   $("#gameno_errors").hide();
                   $("#gameno_errors").html('');
                  }
-                 
-                
+
+
             });
-  
+
 }
 }
 function changewinninggames()
